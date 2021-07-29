@@ -52,9 +52,37 @@ CacheInfo(hits=0, misses=3, maxsize=128, currsize=2)
 
 Well, to make a long story short, it turns out `lru_cache` uses every single argument to a function to generate the key for that entry. *Including* `self`. This isn't surprising in hindsight - `self` is, after all, just an argument like any other - but it took me longer than I care to admit to realize this was the issue.
 
-This wouldn't normally be a big deal, except django is doing some magic behind the scenes that means that a `View`'s hash changes every time you load the view's page. This explains why every single call was a miss; the hash of the parameters was changing on every call.
+To be explicit, here's a simple example of what's going on:
 
-Is there an easy solution to this? In my case, yes. My computation didn't rely on any instance attributes, so it could be trivially converted to a static method, avoiding the issue altogether:
+```python
+import random
+from functools import lru_cache
+
+class RandomHash:
+    @lru_cache
+    def expensive(self):
+        return random.randint(1, 100)
+
+    def __hash__(self):
+        return random.randint(1, 100)
+
+r = RandomHash()
+print(r.expensive())
+print(r.expensive())
+print(r.expensive())
+```
+
+```python
+21
+10
+72
+```
+
+As you can see, the function calls aren't actually being cached.
+
+This wouldn't normally be a big deal, except django is doing some magic behind the scenes that causes a `View`'s hash to every time you load its page. This explains why every single call was a miss; the hash of the parameters was indeed changing on every call.
+
+Is there an easy solution to my original problem? In this case, yes. My computation didn't rely on any instance attributes, so it could be trivially converted to a static method, avoiding the issue altogether by simply taking `self` out of the equation:
 
 ```python
     @staticmethod
