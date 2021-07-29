@@ -1,0 +1,111 @@
+---
+---
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
+@import url('https://fonts.googleapis.com/css?family=Raleway:600');
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+
+@import "variables";
+
+@import "bootstrap/mixins";
+@import "bootstrap/reboot";
+@import "bootstrap/type";
+@import "bootstrap/grid";
+@import "bootstrap/list-group";
+@import "bootstrap/code";
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/utilities";
+@import "bootstrap/dropdown";
+@import "bootstrap/card";
+@import "bootstrap/buttons";
+@import "bootstrap/images";
+@import "bootstrap/transitions";
+
+@import "rouge";
+
+
+body {
+  display: flex;
+  margin: 15px;
+  overflow-y: scroll;
+  justify-content: center;
+  font-family: "Open Sans (WOFF2)", "Open Sans (WOFF)", "Open Sans (TTF)", sans-serif;
+}
+p > code {
+  background-color: #f5f5f5;
+  padding: 3px;
+}
+a {
+  text-decoration: none;
+  color: #428bca;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.4rem;
+}
+h3 {
+  font-size: 1.3rem;
+}
+h4 {
+  font-size: 1.2rem;
+}
+h5 {
+  font-size: 1.1rem;
+}
+h6 {
+  font-size: 1rem;
+}
+.container {
+  // max-width: 750px;
+  width: 100%;
+}
+.subtlelink {
+  color: #000;
+}
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.header__title {
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+.header__links > a {
+  margin: 10px;
+}
+.content-list__entry,
+.content__title {
+  margin-top: 15px;
+}
+.content__title {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.content img {
+  width: 100%;
+  margin: 15px;
+}
+.title {
+  font-size: 1.6rem;
+}
+.date {
+  color: gray;
+}
+.highlight > pre {
+  padding: 10px;
+  font-family: "Ubuntu Mono", Menlo, monospace;
+  max-width: 100%;
+  overflow-x: auto;
+}

@@ -1,0 +1,17 @@
+---
+title: tybug's blog
+permalink: /
+layout: default
+---
+
+<div class="content-list">
+  {% for post in site.posts %}
+  <div class="content-list__entry">
+    <a href="{{ post.url }}">
+      <div class="title">{{ post.title }}</div>
+    </a>
+    <div class="date">{{ post.date | date: "%Y-%m-%d" }}</div>
+  </div>
+  <!-- {{ post.content }} -->
+{% endfor %}
+</div>

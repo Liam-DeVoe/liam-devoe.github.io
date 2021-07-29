@@ -1,0 +1,6 @@
+url: https://tybug.github.io/blog
+
+timezone: America/New_York
+
+plugins:
+  - jekyll-feed
