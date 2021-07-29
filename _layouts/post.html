@@ -4,7 +4,7 @@ layout: default
 
 <h1>{{ page.title | markdownify }}</h1>
 
-<p class="text-muted">{{ page.date |  date: "%A, %B %d, %Y, %l:%M %p %Z" }}</p>
+<p class="text-muted">{{ page.date |  date: "%A, %B %d, %Y" }}</p>
 
 {% if page.tags %}
 {% assign tags = page.tags | sort %}
