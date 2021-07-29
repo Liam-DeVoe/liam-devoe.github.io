@@ -3,7 +3,7 @@ title: "@lru_cache gotchas"
 layout: post
 ---
 
-I was adding some caching to a django application via `@lru_cache`, and much to my confusion, it wasn't working. I could even see the cache missess ticking up as I was calling it with identical (read: no) arguments. Here's what it looked like:
+I was adding some caching to a django application via `@lru_cache`, and much to my confusion, it wasn't working. I could even see the cache misses ticking up as I was calling it with identical (read: no) arguments. Here's what it looked like:
 
 ```python
 import random
