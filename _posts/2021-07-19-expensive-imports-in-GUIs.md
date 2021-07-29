@@ -23,7 +23,7 @@ class FrametimeWindow(QMainWindow):
         self.resize(600, 500)
 ```
 
-since the import is at the top of the file, this import will whenever the application first starts, and block the ui thread until the import is complete. That's 0.8 seconds added to the time it takes for circleguard to launch every time!
+Since the import is at the top of the file, this import will whenever the application first starts, and block the ui thread until the import is complete. That's 0.8 seconds added to the time it takes for circleguard to launch every time!
 
 How can we alleviate this? The most obvious answer is to simply move the import, assuming you're not calling any methods when the application first starts which import these expensive modules:
 
