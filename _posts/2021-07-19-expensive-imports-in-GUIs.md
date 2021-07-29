@@ -70,4 +70,4 @@ thread.start()
 
 And it works like a charm. Since python imports are thread safe, we don't need to worry about weirdness caused by simultaneous imports (eg in this thread and the ui thread) or anything like that.
 
-I think this is a pretty simple trick all things considered. But I haven't seen it mentioned anywhere online, which is why I'm bothering to write about it. Sticking expensive computations into a background thread is pretty standard practice, but since I don't normally consider importing modules as something that can  happen anywhere except the main thread, it wasn't obvious to me that this applied to importing modules as well.
+I think this is a pretty simple trick all things considered. But I haven't seen it mentioned anywhere online, which is why I'm bothering to write about it. Sticking expensive computations into a background thread is pretty standard practice, but since I don't normally consider importing modules as something that can happen anywhere except the main thread, it wasn't obvious to me that this could apply to importing modules as well.
