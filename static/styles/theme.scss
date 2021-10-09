@@ -2,7 +2,6 @@
 ---
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
-@import url('https://fonts.googleapis.com/css?family=Raleway:600');
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
 
 @import "variables";
@@ -110,3 +109,9 @@ h6 {
   max-width: 100%;
   overflow-x: auto;
 }
+
+.post__title {
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+
