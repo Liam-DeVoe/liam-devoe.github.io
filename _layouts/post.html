@@ -4,15 +4,17 @@ layout: default
 
 <span class="post__title mr-2">{{ page.title }}</span>
 
-<p class="text-muted">{{ page.date |  date: "%A, %B %d, %Y" }}</p>
-
 {% if page.tags %}
   {% assign tags = page.tags | sort %}
-  {% for tag in tags %}
-    <a href="/tags#{{ tag }}" class="btn btn-info btn-sm mt-1"><i class="fas fa-tag"></i> {{ tag }}</a>
-  {% endfor %}
+  <span class="post__tags-container">
+    {% for tag in tags %}
+      <a href="/tags#{{ tag }}" class="tag tag__button"><i class="fas fa-tag tag tag__icon"></i>{{ tag }}</a>
+    {% endfor %}
+  </span>
   <br/>
 {% endif %}
+
+<p class="text-muted">{{ page.date |  date: "%A, %B %d, %Y" }}</p>
 
 {{ content }}
 
