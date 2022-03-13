@@ -31,6 +31,11 @@ body {
   justify-content: center;
   font-family: "Open Sans (WOFF2)", "Open Sans (WOFF)", "Open Sans (TTF)", sans-serif;
 }
+
+p {
+  font-weight: 500;
+}
+
 p > code {
   background-color: #f5f5f5;
   padding: 3px;
