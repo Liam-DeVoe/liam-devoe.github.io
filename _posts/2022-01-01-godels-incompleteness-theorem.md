@@ -17,7 +17,7 @@ Unfortunately, before we can unpack the statement of the incompleteness theorem,
 
 # Sentences and Theories
 
-I could give a formal introduction to model theory here (and indeed that's what the first draft of this post did), but I think it's actually best to teach it via a few examples: groups and euclidean geometry.
+I could give a formal introduction to model theory here, but I think it's actually best to teach it via a few examples. I'll use groups and euclidean geometry as examples throughout this post.
 
 Let's discuss groups first. If you're not familiar with what a group is, it's just a set of elements and an operation $*$ which follows certain rules, typically called axioms. You'll find the following axioms of a group at the beginning of any group theory textbook:
 
@@ -105,7 +105,7 @@ You may also recall the particularly contentious parallel postulate (PP), the fi
 
 Once they had shown PP could not be proven from neutral geometry, they called PP independent of neutral geometry. Does this term "independent" sound familiar? It should - we defined $\sigma$ to be independet of $T$ if there are $\mathcal{A} \vDash T$, $\mathcal{B} \vDash T$ where $\sigma$ is true in $\mathcal{A}$ and false in $\mathcal{B}$. Here, $\sigma$ is the parallel postulate, $T$ is neutral geometry, $\mathcal{A}$ is a model of euclidean geometry, and $\mathcal{B}$ is a model of elliptical geometry. In general, proving that an axiom $\sigma \in T$ is "independent" of (cannot be proven from) the other axioms of $T$ is equivalent to proving that $\sigma$ is independent of $T \setminus \\{\sigma\\}$, in the formal sense of independence described above.
 
-Because PP is independent of $T_{NG}$, $T_{NG}$ is incomplete by definition. However, it turns out that $T_{EG} = T_{NG} \cup \\{\text{PP}\\}$ is actually complete, so by taking PP as a new axiom we've created a complete theory.[^3] We'll discuss this concept of "completing" a theory $T$ by adding new axioms again soon, and whether this can save us from the consequences of the incompleteness theorem. Spoiler: it can't.
+Because PP is independent of $T_{NG}$, $T_{NG}$ is incomplete by definition. However, it turns out that $T_{EG} = T_{NG} \cup \\{\text{PP}\\}$ is actually complete, so by taking PP as a new axiom we've created a complete theory.[^3] We'll discuss this concept of "completing" a theory $T$ by adding new axioms again later, and whether this can save us from the consequences of the incompleteness theorem. Spoiler: it can't.
 
 # Sufficiently Strong
 
@@ -161,9 +161,9 @@ But wait - we said earlier that the theory of euclidean geometry, $T_{EG}$, was 
 
 Recall that we saw $T_{NG}$ (neutral geometry), which is incomplete, could be extended to a complete theory $T_{EG}$ (euclidean geometry) by adding the parallel postulate. We say that $T_{EG}$ is a "completion" of $T_{NG}$, that $T_{NG}$ can be "completed" by adding PP, etc.
 
-You might wonder if we could pull the same trick for theories affected by the incompleteness theorem. Given some sufficiently strong theory $T$, the incompleteness theorem says there is some $\sigma$ independent of $T$. Could we complete $T$ by adding either $\sigma$ or $\lnot \sigma$ to $T$ as an axiom? No, regardless of which we choose. Adding an axiom to a theory never makes that theory weaker (ie prove less theorems). It can only make it stronger. So this new theory $T' = T \cup \\{\sigma\\}$ would still be sufficiently strong and thus satisfy the incompleteness theorem, so there is some new sentence $\sigma'$ which is independent of $T'$.
+You might wonder if we could pull the same trick for theories affected by the incompleteness theorem. Given some sufficiently strong theory $T$, the incompleteness theorem says there is some $\sigma$ independent of $T$. Could we complete $T$ by adding either $\sigma$ or $\lnot \sigma$ to $T$ as an axiom? The answer is no, regardless of which we choose. Adding an axiom to a theory never makes that theory weaker (ie prove less theorems) - it can only make it stronger. So this new theory $T' = T \cup \\{\sigma\\}$ would still be sufficiently strong and thus satisfy the incompleteness theorem, so there is some new sentence $\sigma'$ which is independent of $T'$.
 
-This means thatnNo matter how many independent sentences we add to a sufficiently strong theory, the resulting theory will still be sufficiently strong and thus subject to the incompleteness theorem. So we'll never be able to "complete" a sufficiently strong theory.
+This means that no matter how many independent sentences we add to a sufficiently strong theory as axioms, the resulting theory will still be sufficiently strong and thus subject to the incompleteness theorem. So we'll never be able to "complete" a sufficiently strong theory.
 
 # Common Misunderstandings
 
