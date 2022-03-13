@@ -205,7 +205,7 @@ Here's our updated incompleteness theorem:
 
 ## Recursively Enumerable
 
-For what are actually pretty technical reasons, we also require that $T$ be "recursively enumerable". This is equivalent to saying that the elements of $T$ are "computable", ie there is an algorithm which, given any sentence $\sigma$, returns true if $\sigma \in T$ and false otherwise. It's not worth getting into the details here, but this basically rules out crazy theories where you just throw in so many axioms that you're eventually able to prove everything in all models.
+For what are actually pretty technical reasons, we also require that $T$ be "recursively enumerable". This is equivalent to saying that the elements of $T$ are "computable", ie there is an algorithm which, given any sentence $\sigma$, returns true if $\sigma \in T$ and false otherwise. It's not worth getting into the details here, but this basically rules out crazy theories where you just throw in so many axioms that you're eventually able to prove everything in all models. Any "reasonable" theory like $\text{ZFC}$ or $Q$ is recursively enumerable.
 
 You might also see such theories being called "decidable", as in, you can "decide" whether a sentence $\sigma$ is an element of $T$.[^7]
 
