@@ -111,7 +111,7 @@ Because PP is independent of $T_{NG}$, $T_{NG}$ is incomplete by definition. How
 
 You're in the home stretch now, and I've left the simplest (or rather, easiest to explain informally) for last. A theory $T$ is **sufficiently strong** if it contains the natural numbers, addition on the natural numbers, and multiplication on the natural numbers (or contains items isomorphic to them). More formally, $T$ is sufficiently strong if it contains [Robinson arithemtic](https://en.wikipedia.org/wiki/Robinson_arithmetic), called $Q$. If you're familiar with peano arithmetic, robinson arithmetic is just peano arithmetic without induction.
 
-Understanding *why* containing $Q$ is necessary gets to the heart of the incompleteness theorem and is a much deeper discussion than we can get into in this post, so I hope you'll forgive me if I don't go into any more detail here.
+Understanding *why* containing $Q$ is necessary gets to the heart of the proof of the incompleteness theorem and is a much deeper discussion than we can get into in this post, so I hope you'll forgive me if I don't go into any more detail here.
 
 # Bringing It All Together
 
@@ -127,7 +127,7 @@ And finally, the incompleteness theorem itself again:
 
 <div class="quote">For any sufficiently strong axiomatic theory $T$, there is a sentence $\sigma$ which is independent of $T$.</div>
 
-Congratulations - you now know everything you need to understand the statement of the incompleteness theorem. If that was your goal, you can walk away now a happy man. However, I suspect you're also curious about the consequences of the incompleteness theorem, which I'll discuss below.
+Congratulations - you now know everything you need to understand the statement of the incompleteness theorem. If that was your goal, you can walk away a happy man. However, I suspect you're also curious about the consequences of the incompleteness theorem, which I'll discuss below.
 
 # Consequences of the Incompleteness Theorem
 
@@ -149,7 +149,7 @@ So, sentences being independent of a theory is bad. The incompleteness theorem s
 
 ## Incompleteness of $T_{group}$
 
-But wait - if a theory $T$ being incomplete is bad, and we proved that $T_{group}$ is incomplete above, isn't that bad news for group theorists? Well, it's not great, but it's not terrible either. The "fracture" among $T_{group}$ caused by incomplete sentences isn't bad in the same way that it is for the foundation of mathematics. For instance, it's true that $\sigma_{abelian}$ splits $T_{group}$ into two theories: $T_{group} \cup \\{\sigma_{abelian}\\}$ and $T_{group} \cup \\{\lnot \sigma_{abelian}\\}$. But these are just the theories of abelian and non-abelian groups respectively. If I had asked you before reading this post whether studying abelian and non-abelian groups separately bothers you, you would have looked at me like I'm crazy.
+But wait - if a theory $T$ being incomplete is bad, and we proved that $T_{group}$ is incomplete above, isn't that bad news for group theorists? Well, it's not great, but it's not terrible either. The "fracture" among $T_{group}$ caused by incomplete sentences isn't bad in the same way that it is for the foundation of mathematics. For instance, it's true that $\sigma_{abelian}$ splits $T_{group}$ into two theories: $T_{group} \cup \\{\sigma_{abelian}\\}$ and $T_{group} \cup \\{\lnot \sigma_{abelian}\\}$. But these are just the theories of abelian and non-abelian groups respectively. If I had asked you before reading this post whether studying abelian and non-abelian groups separately bothers you, you would have looked at me like I'm crazy. After all, if you want to prove something about an abelian group, you just assume that $G$ is abelian (but note that this is identical to working in $T_{group} \cup \\{\sigma_{abelian}\\}$).
 
 The difference lies in that $T_{group}$ is not trying to be a theory of mathematics. You don't particularly care if you can't prove every possible statement for all groups, because if you can't, you can always look at a specific group you care about and prove whether that statement is true in that group or not. This isn't possible in a theory of mathematics.[^6]
 
