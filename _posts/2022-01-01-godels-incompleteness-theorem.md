@@ -1,11 +1,11 @@
 ---
-title: "godel's incompleteness theorem"
+title: "gödel's incompleteness theorem"
 layout: post
 ---
 
-Ah, Godel's incompleteness theorem. I wouldn't say it's the most misused theorem in all of mathematics, but I'd argue it has the worst ratio of "people who actually understand it" to "people who misapply it" of any theorem.
+Ah, Gödel's incompleteness theorem. I wouldn't say it's the most misused theorem in all of mathematics, but I'd argue it has the worst ratio of "people who actually understand it" to "people who misapply it" of any theorem.
 
-The goal is that by the end of this post you will fully understand the statement of the incompleteness theorems, including avoiding the most common pitfalls people get caught by when quoting it.
+The goal is that by the end of this post you will fully understand the statement of the incompleteness theorem, including avoiding the most common pitfalls people get caught by when quoting it.
 
 Let's state the incompleteness theorem (relatively) formally first so you can see where we're headed, and then I'll explain each piece of the definition on its own.
 
@@ -153,6 +153,18 @@ But wait - if a theory $T$ being incomplete is bad, and we proved that $T_{group
 
 The difference lies in that $T_{group}$ is not trying to be a theory of mathematics. You don't particularly care if you can't prove every possible statement for all groups, because if you can't, you can always look at a specific group you care about and prove whether that statement is true in that group or not. This isn't possible in a theory of mathematics.[^6]
 
+## Completeness of $T_{EG}$
+
+But wait - we said earlier that the theory of euclidean geometry, $T_{EG}$, was complete. Does this contradict the incompleteness theorem? No, because $T_{EG}$ is not "sufficiently strong". There are a great number of interesting theories which are complete, like $T_{EG}$, but that aren't strong enough to be subject to the incompleteness theorem.
+
+## "Completing" a Theory
+
+Recall that we saw $T_{NG}$ (neutral geometry), which is incomplete, could be extended to a complete theory $T_{EG}$ (euclidean geometry) by adding the parallel postulate. We say that $T_{EG}$ is a "completion" of $T_{NG}$, that $T_{NG}$ can be "completed" by adding PP, etc.
+
+You might wonder if we could pull the same trick for theories affected by the incompleteness theorem. Given some sufficiently strong theory $T$, the incompleteness theorem says there is some $\sigma$ independent of $T$. Could we complete $T$ by adding either $\sigma$ or $\lnot \sigma$ to $T$ as an axiom? No, regardless of which we choose. Adding an axiom to a theory never makes that theory weaker (ie prove less theorems). It can only make it stronger. So this new theory $T' = T \cup \\{\sigma\\}$ would still be sufficiently strong and thus satisfy the incompleteness theorem, so there is some new sentence $\sigma'$ which is independent of $T'$.
+
+This means thatnNo matter how many independent sentences we add to a sufficiently strong theory, the resulting theory will still be sufficiently strong and thus subject to the incompleteness theorem. So we'll never be able to "complete" a sufficiently strong theory.
+
 # Common Misunderstandings
 
 The single most common misunderstanding (I'm tempted to say "abuse") of the incompleteness theorem is that the independent sentence is somehow "true". For instance, here's a direct quote [from wikipedia](https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems):
@@ -179,6 +191,40 @@ Informally, completeness of first order logic says for all theories $T$ and sent
 
 In contrast, the "incompleteness" in the incompleteness theorem means that some theories $T$ have sentences which are neither true nor false in $T$. These independent sentences don't even satisfy the conditions of the completeness theorem (since they're not true in every model), so these two theorems are entirely orthogonal. So despite the seeming contradiction in their names, there's no contradiction in the statements.
 
+# Technicalities
+
+I haven't been entirely truthful with you. There are two extra assumptions we need to add before we get the true incompleteness theorem. They deal with what are essentially pathological edge cases (though very important edge cases) and so you won't run into them in standard use of the incompleteness theorem, but I'll discuss them here for completeness (heh).
+
+## Satisfiable
+
+First, we require that the theory $T$ be **satisfiable**. A theory $T$ is **satisfiable** if there is some model $\mathcal{A} \vDash T$. Equivalently, $T$ is satisfiable if its axioms are consistent, ie you can't derive a contradiction from them. If we allowed $T$ to be unsatisfiable, then the incompleteness theorem would fail in the trivial case: let $T$ be any sufficiently strong, unsatisfiable theory. Then there are no models $\mathcal{A} \vDash T$, so vacuously, there are no independent sentences $\sigma$ (since an independent sentence requires at least two models). But this would contradict the incompleteness theorem.
+
+Here's our updated incompleteness theorem:
+
+<div class="quote">For any sufficiently strong, satisfiable axiomatic theory $T$, there is a sentence $\sigma$ which is independent of $T$.</div>
+
+## Recursively Enumerable
+
+For what are actually pretty technical reasons, we also require that $T$ be "recursively enumerable". This is equivalent to saying that the elements of $T$ are "computable", ie there is an algorithm which, given any sentence $\sigma$, returns true if $\sigma \in T$ and false otherwise. It's not worth getting into the details here, but this basically rules out crazy theories where you just throw in so many axioms that you're eventually able to prove everything in all models.
+
+You might also see such theories being called "decidable", as in, you can "decide" whether a sentence $\sigma$ is an element of $T$.[^7]
+
+So our updated incompleteness theorem is then:
+
+<div class="quote">For any sufficiently strong, satisfiable, recursively enumerable axiomatic theory $T$, there is a sentence $\sigma$ which is independent of $T$.</div>
+
+You can see why I didn't want to lead with this definition :)
+
+I promise that I'm not holding anything back anymore - this is the genuine, full incompleteness theorem which gödel himself proved. These two extra assumptions rarely come up in sane discussions of the incompleteness theorem, which is why I left them until now to discuss.
+
+# Afterword
+
+This was a huge post, but believe me, it took many times longer to write than it took you to read. There's a reason why so many people (wikipedia included) handwave a lot of the aspects of the incompleteness theorem: it simply takes a lot of time to give a full treatment of it.
+
+I debated a lot about which examples of theories to use, and in fact originally wrote a draft where I used the theory of real-valued vector spaces. Unfortunately, its axiomatization is quite dirty, and so I dropped it in favor of the theory of groups, even though I think more people would be familiar with vector spaces than groups. Oh well.
+
+There are also some philosophical implications I wanted to include, but I don't feel qualified to discuss them. I'm also not really convinced how big the philosophical implications of the incompleteness theorem are.
+
 [^1]: Since theories consist of sentences, and sentences depend on a language, you would be right to suspect that theories also depend on a language. Formally we call a theory $T$ an $L$-theory, where L is the language of the theory. We again drop the $L$- prefix when the langauge is clear from context.
 
 [^2]: If $\sigma$ is true in $\mathcal{A}$, you'll see this written in the literature as $\mathcal{A} \vDash \sigma$. However, you'll see very shortly that this is an overloading of the $\vDash$ operator; its meaning changes depending on if the right hand side is a sentence $\sigma$ or a theory $T$. In my opinion, this would be unecessarily confusing for the level of detail required for this post, so I'll avoid writing $\mathcal{A} \vDash \sigma$ and just say "$\sigma$ is true in $\mathcal{A}$". However, the former is more correct.
@@ -189,4 +235,6 @@ In contrast, the "incompleteness" in the incompleteness theorem means that some 
 
 [^5]: See [List of statements independent of ZFC](https://en.wikipedia.org/wiki/List_of_statements_independent_of_ZFC) if you're curious.
 
-[^6]: This is because any theory of mathematics can't prove that there are any models of that theory, or else the theory would be consistent, which contradicts godel's second incompleteness theorem. So there are no "specific models" of a theory of mathematics to look at.
+[^6]: This is because any theory of mathematics can't prove that there are any models of that theory, or else the theory would be consistent, which contradicts godel's second incompleteness theorem. So there are no "specific models" of a theory of mathematics to look at - in fact, there are no models of a theory of mathematics at all.
+
+[^7]: The multitude of names is thanks to computability theory, which proved that several distinct notions of computability (all with their own names) are actually exactly equivalent, and thus people use the names interchangeably.
