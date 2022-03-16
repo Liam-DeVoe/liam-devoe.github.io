@@ -193,7 +193,7 @@ In contrast, the "incompleteness" in the incompleteness theorem means that some 
 
 # Technicalities
 
-I haven't been entirely truthful with you. There are two extra assumptions we need to add before we get the true incompleteness theorem. They deal with what are essentially pathological edge cases (though very important edge cases) and so you won't run into them in standard use of the incompleteness theorem, but I'll discuss them here for completeness (heh).
+I haven't been entirely truthful with you. There are two extra assumptions we need to add before we get the true incompleteness theorem. They deal with what are essentially edge cases (though very important edge cases) and so you won't run into them in standard use of the incompleteness theorem, but I'll discuss them here for completeness (heh).
 
 ## Satisfiable
 
