@@ -11,7 +11,7 @@ Let's state the incompleteness theorem (relatively) formally first so you can se
 
 <div class="quote">For any sufficiently strong axiomatic theory $T$, there is a sentence $\sigma$ which is independent of $T$.</div>
 
-As is typical for mathematical definitions, this is a seemingly simple formulation for what is actually a very complicated theorem. Don't worry if you don't know what **sufficiently strong**, **theory**, **sentence**, or **indepedent** means - that's exactly what I'll explain below.
+As is typical for mathematical definitions, this is a seemingly simple formulation for what is actually a very complicated theorem. Don't worry if you don't know what **sufficiently strong**, **theory**, **sentence**, or **indepedent** means — that's exactly what I'll explain below.
 
 Unfortunately, before we can unpack the statement of the incompleteness theorem, you need a crash course in model theory. This will be a little bit painful, but I promise it's critically important to the incompleteness theorem, and I'll provide plenty of examples.
 
@@ -53,7 +53,7 @@ We've defined what a **sentence** and a **theory** is, so there's only two terms
 
 To discuss independence of sentences, we first need to talk about models. We say that $\mathcal{A}$ is a model of a theory $T$ if $\sigma$ is true in $\mathcal{A}$ for all $\sigma \in T$.[^2]
 
-Don't be scared by the notation - this is actually quite simple and something you've done a thousand times. If you wanted to check whether something is a group or not, what do you do? You check that it satisfies all the axioms of being a group. This is all the definition above is stating. Saying "$(\mathbb{Z}, +)$ is a group" is equivalent to saying "$(\mathbb{Z}, +)$ models $T_{group}$".
+Don't be scared by the notation — this is actually quite simple and something you've done a thousand times. If you wanted to check whether something is a group or not, what do you do? You check that it satisfies all the axioms of being a group. This is all the definition above is stating. Saying "$(\mathbb{Z}, +)$ is a group" is equivalent to saying "$(\mathbb{Z}, +)$ models $T_{group}$".
 
 If $\mathcal{A}$ models $T$, we write $\mathcal{A} \vDash T$.
 
@@ -67,7 +67,7 @@ $$
 \sigma_{abelian} = \forall a \forall b \ (a*b = b*a)
 $$
 
-To see that $\sigma_{abelian}$ proves that $T_{group}$ is not complete, pick your favorite abelian group, say $(\mathbb{Z}, +)$, and your favorite non-abelian group, say $GL(2, \mathbb{R})$. (If you don't know group theory, don't worry about what these particular groups are: all you need to know is one is abelian and the other is not). It's easy to see that $\sigma_{abelian}$ is true in $(\mathbb{Z}, +)$ and false in $GL(2, \mathbb{R})$, since addition commutes and matrix multiplication does not. But clearly both $(\mathbb{Z}, +)$ and $GL(2, \mathbb{R})$ are models of $T_{group}$ - after all, they're both groups and thus satisfy the three axioms of $T_{group}$. So $\sigma_{abelian}$ is true in $(\mathbb{Z}, +) \vDash T_{group}$ and false in $GL(2, \mathbb{R}) \vDash T_{group}$, so $T_{group}$ is not complete by definition.
+To see that $\sigma_{abelian}$ proves that $T_{group}$ is not complete, pick your favorite abelian group, say $(\mathbb{Z}, +)$, and your favorite non-abelian group, say $GL(2, \mathbb{R})$. (If you don't know group theory, don't worry about what these particular groups are: all you need to know is one is abelian and the other is not). It's easy to see that $\sigma_{abelian}$ is true in $(\mathbb{Z}, +)$ and false in $GL(2, \mathbb{R})$, since addition commutes and matrix multiplication does not. But clearly both $(\mathbb{Z}, +)$ and $GL(2, \mathbb{R})$ are models of $T_{group}$ — after all, they're both groups and thus satisfy the three axioms of $T_{group}$. So $\sigma_{abelian}$ is true in $(\mathbb{Z}, +) \vDash T_{group}$ and false in $GL(2, \mathbb{R}) \vDash T_{group}$, so $T_{group}$ is not complete by definition.
 
 # Independence
 
@@ -103,7 +103,7 @@ You'll notice that this isn't really a precise mathematic definition, but that's
 
 You may also recall the particularly contentious parallel postulate (PP), the fifth axiom of euclidean geometry. Some people thought that the parallel postulate could be proven from the rest of the axioms, and gave the name "neutral geometry" to the set of axioms of euclidean gemoetry without PP. I'll call the theory of neutral geometry $T_{NG} = T_{EG} \setminus \\{PP\\}$. They then showed PP could not be proven from the rest of the axioms by constructucting two models of $T_{NG}$: one in which PP was true (a model of euclidean geometry) and one in which PP is false (a model of elliptical geometry).
 
-Once they had shown PP could not be proven from neutral geometry, they called PP independent of neutral geometry. Does this term "independent" sound familiar? It should - we defined $\sigma$ to be independet of $T$ if there are $\mathcal{A} \vDash T$, $\mathcal{B} \vDash T$ where $\sigma$ is true in $\mathcal{A}$ and false in $\mathcal{B}$. Here, $\sigma$ is the parallel postulate, $T$ is neutral geometry, $\mathcal{A}$ is a model of euclidean geometry, and $\mathcal{B}$ is a model of elliptical geometry. In general, proving that an axiom $\sigma \in T$ is "independent" of (cannot be proven from) the other axioms of $T$ is equivalent to proving that $\sigma$ is independent of $T \setminus \\{\sigma\\}$, in the formal sense of independence described above.
+Once they had shown PP could not be proven from neutral geometry, they called PP independent of neutral geometry. Does this term "independent" sound familiar? It should — we defined $\sigma$ to be independet of $T$ if there are $\mathcal{A} \vDash T$, $\mathcal{B} \vDash T$ where $\sigma$ is true in $\mathcal{A}$ and false in $\mathcal{B}$. Here, $\sigma$ is the parallel postulate, $T$ is neutral geometry, $\mathcal{A}$ is a model of euclidean geometry, and $\mathcal{B}$ is a model of elliptical geometry. In general, proving that an axiom $\sigma \in T$ is "independent" of (cannot be proven from) the other axioms of $T$ is equivalent to proving that $\sigma$ is independent of $T \setminus \\{\sigma\\}$, in the formal sense of independence described above.
 
 Because PP is independent of $T_{NG}$, $T_{NG}$ is incomplete by definition. However, it turns out that $T_{EG} = T_{NG} \cup \\{\text{PP}\\}$ is actually complete, so by taking PP as a new axiom we've created a complete theory.[^3] We'll discuss this concept of "completing" a theory $T$ by adding new axioms again later, and whether this can save us from the consequences of the incompleteness theorem. Spoiler: it can't.
 
@@ -127,7 +127,7 @@ And finally, the incompleteness theorem itself again:
 
 <div class="quote">For any sufficiently strong axiomatic theory $T$, there is a sentence $\sigma$ which is independent of $T$.</div>
 
-Congratulations - you now know everything you need to understand the statement of the incompleteness theorem. If that was your goal, you can walk away a happy man. However, I suspect you're also curious about the consequences of the incompleteness theorem, which I'll discuss below.
+Congratulations — you now know everything you need to understand the statement of the incompleteness theorem. If that was your goal, you can walk away a happy man. However, I suspect you're also curious about the consequences of the incompleteness theorem, which I'll discuss below.
 
 # Consequences of the Incompleteness Theorem
 
@@ -149,19 +149,19 @@ So, sentences being independent of a theory is bad. The incompleteness theorem s
 
 ## Incompleteness of $T_{group}$
 
-But wait - if a theory $T$ being incomplete is bad, and we proved that $T_{group}$ is incomplete above, isn't that bad news for group theorists? Well, it's not great, but it's not terrible either. The "fracture" among $T_{group}$ caused by incomplete sentences isn't bad in the same way that it is for the foundation of mathematics. For instance, it's true that $\sigma_{abelian}$ splits $T_{group}$ into two theories: $T_{group} \cup \\{\sigma_{abelian}\\}$ and $T_{group} \cup \\{\lnot \sigma_{abelian}\\}$. But these are just the theories of abelian and non-abelian groups respectively. If I had asked you before reading this post whether studying abelian and non-abelian groups separately bothers you, you would have looked at me like I'm crazy. After all, if you want to prove something about an abelian group, you just assume that $G$ is abelian (but note that this is identical to working in $T_{group} \cup \\{\sigma_{abelian}\\}$).
+But wait — if a theory $T$ being incomplete is bad, and we proved that $T_{group}$ is incomplete above, isn't that bad news for group theorists? Well, it's not great, but it's not terrible either. The "fracture" among $T_{group}$ caused by incomplete sentences isn't bad in the same way that it is for the foundation of mathematics. For instance, it's true that $\sigma_{abelian}$ splits $T_{group}$ into two theories: $T_{group} \cup \\{\sigma_{abelian}\\}$ and $T_{group} \cup \\{\lnot \sigma_{abelian}\\}$. But these are just the theories of abelian and non-abelian groups respectively. If I had asked you before reading this post whether studying abelian and non-abelian groups separately bothers you, you would have looked at me like I'm crazy. After all, if you want to prove something about an abelian group, you just assume that $G$ is abelian (but note that this is identical to working in $T_{group} \cup \\{\sigma_{abelian}\\}$).
 
 The difference lies in that $T_{group}$ is not trying to be a theory of mathematics. You don't particularly care if you can't prove every possible statement for all groups, because if you can't, you can always look at a specific group you care about and prove whether that statement is true in that group or not. This isn't possible in a theory of mathematics.[^6]
 
 ## Completeness of $T_{EG}$
 
-But wait - we said earlier that the theory of euclidean geometry, $T_{EG}$, was complete. Does this contradict the incompleteness theorem? No, because $T_{EG}$ is not "sufficiently strong". There are a great number of interesting theories which are complete, like $T_{EG}$, but that aren't strong enough to be subject to the incompleteness theorem.
+But wait — we said earlier that the theory of euclidean geometry, $T_{EG}$, was complete. Does this contradict the incompleteness theorem? No, because $T_{EG}$ is not "sufficiently strong". There are a great number of interesting theories which are complete, like $T_{EG}$, but that aren't strong enough to be subject to the incompleteness theorem.
 
 ## "Completing" a Theory
 
 Recall that we saw $T_{NG}$ (neutral geometry), which is incomplete, could be extended to a complete theory $T_{EG}$ (euclidean geometry) by adding the parallel postulate. We say that $T_{EG}$ is a "completion" of $T_{NG}$, that $T_{NG}$ can be "completed" by adding PP, etc.
 
-You might wonder if we could pull the same trick for theories affected by the incompleteness theorem. Given some sufficiently strong theory $T$, the incompleteness theorem says there is some $\sigma$ independent of $T$. Could we complete $T$ by adding either $\sigma$ or $\lnot \sigma$ to $T$ as an axiom? The answer is no, regardless of which we choose. Adding an axiom to a theory never makes that theory weaker (ie prove less theorems) - it can only make it stronger. So this new theory $T' = T \cup \\{\sigma\\}$ would still be sufficiently strong and thus satisfy the incompleteness theorem, so there is some new sentence $\sigma'$ which is independent of $T'$.
+You might wonder if we could pull the same trick for theories affected by the incompleteness theorem. Given some sufficiently strong theory $T$, the incompleteness theorem says there is some $\sigma$ independent of $T$. Could we complete $T$ by adding either $\sigma$ or $\lnot \sigma$ to $T$ as an axiom? The answer is no, regardless of which we choose. Adding an axiom to a theory never makes that theory weaker (ie prove less theorems) — it can only make it stronger. So this new theory $T' = T \cup \\{\sigma\\}$ would still be sufficiently strong and thus satisfy the incompleteness theorem, so there is some new sentence $\sigma'$ which is independent of $T'$.
 
 This means that no matter how many independent sentences we add to a sufficiently strong theory as axioms, the resulting theory will still be sufficiently strong and thus subject to the incompleteness theorem. So we'll never be able to "complete" a sufficiently strong theory.
 
@@ -177,7 +177,7 @@ There are two things wrong with this statement: first of all, the independent st
 
 But more importantly, an independent sentence $\sigma$ is absolutely not "true" in any sense of the word. It is, *by definition*, true in some model $\mathcal{A} \vDash T$ and false in some other model $\mathcal{B} \vDash T$, so calling it "true" is nonsense. It's neither true nor false; it's independent.
 
-What people really mean when they say that an independent sentence $\sigma$ is true is that it's true in the "standard model", and therefore, they argue, intuitively true. The standard model is just the model that everyone has in mind for visualizing some model $T$. For instance, the standard model of euclidean geometry $T_{EG}$ is the plane $\mathbb{R}^2$. But for other theories, it's not clear at all what the standard model is - what's the standard model for $T_{group}$, for instace? You might say $$(\mathbb{Z}, +)$$, but there's no good reason to choose that group over, say $$(\mathbb{Z}_8, +)$$, or even $$GL(2, \mathbb{R})$$. So I would argue that $$T_{group}$$ has no standard model. Here, this argument about "truth" of an independent sentence breaks down, since there is no standard model.
+What people really mean when they say that an independent sentence $\sigma$ is true is that it's true in the "standard model", and therefore, they argue, intuitively true. The standard model is just the model that everyone has in mind for visualizing some model $T$. For instance, the standard model of euclidean geometry $T_{EG}$ is the plane $\mathbb{R}^2$. But for other theories, it's not clear at all what the standard model is — what's the standard model for $T_{group}$, for instace? You might say $$(\mathbb{Z}, +)$$, but there's no good reason to choose that group over, say $$(\mathbb{Z}_8, +)$$, or even $$GL(2, \mathbb{R})$$. So I would argue that $$T_{group}$$ has no standard model. Here, this argument about "truth" of an independent sentence breaks down, since there is no standard model.
 
 But still, for theories which have a standard model, this line of thinking does have some merit. I just wish people would say "there is a sentence which cannot be proven from $T$ but is true in the standard model", instead of saying "there is a true sentence which cannot be proven", which sounds like a contradiction. This seeming contradiction bothered me for many years when I was reading about the incompleteness theorem but didn't yet fully understand it, and I was greatly relieved when I learned enough to understand what was going on here.
 
@@ -215,7 +215,7 @@ So our updated incompleteness theorem is then:
 
 You can see why I didn't want to lead with this definition :)
 
-I promise that I'm not holding anything back anymore - this is the genuine, full incompleteness theorem which gödel himself proved. These two extra assumptions rarely come up in sane discussions of the incompleteness theorem, which is why I left them until now to discuss.
+I promise that I'm not holding anything back anymore — this is the genuine, full incompleteness theorem which gödel himself proved. These two extra assumptions rarely come up in sane discussions of the incompleteness theorem, which is why I left them until now to discuss.
 
 # Afterword
 
@@ -235,6 +235,6 @@ There are also some philosophical implications I wanted to include, but I don't 
 
 [^5]: See [List of statements independent of ZFC](https://en.wikipedia.org/wiki/List_of_statements_independent_of_ZFC) if you're curious.
 
-[^6]: This is because any theory of mathematics can't prove that there are any models of that theory, or else the theory would be consistent, which contradicts godel's second incompleteness theorem. So there are no "specific models" of a theory of mathematics to look at - in fact, there are no models of a theory of mathematics at all.
+[^6]: This is because any theory of mathematics can't prove that there are any models of that theory, or else the theory would be consistent, which contradicts godel's second incompleteness theorem. So there are no "specific models" of a theory of mathematics to look at — in fact, there are no models of a theory of mathematics at all.
 
 [^7]: The multitude of names is thanks to computability theory, which proved that several distinct notions of computability (all with their own names) are actually exactly equivalent, and thus people use the names interchangeably.
