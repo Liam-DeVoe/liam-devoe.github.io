@@ -11,7 +11,7 @@ Let's state the incompleteness theorem (relatively) formally first so you can se
 
 <div class="quote">For any sufficiently strong axiomatic theory $T$, there is a sentence $\sigma$ which is independent of $T$.</div>
 
-As is typical for mathematical definitions, this is a seemingly simple formulation for what is actually a very complicated theorem. Don't worry if you don't know what **sufficiently strong**, **theory**, **sentence**, or **indepedent** means — that's exactly what I'll explain below.
+As is typical for mathematical definitions, this is a seemingly simple formulation for what is actually a very complicated theorem. Don't worry if you don't know what **sufficiently strong**, **theory**, **sentence**, or **independent** means — that's exactly what I'll explain below.
 
 Unfortunately, before we can unpack the statement of the incompleteness theorem, you need a crash course in model theory. This will be a little bit painful, but I promise it's critically important to the incompleteness theorem, and I'll provide plenty of examples.
 
