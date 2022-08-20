@@ -4,7 +4,14 @@ My personal blog / website. Don't expect a lot of posts; I only write about thin
 
 ## Development
 
-To serve locally (<http://127.0.0.1:4000/>):
+To install dependencies:
+
+```
+gem install bundler
+bundler install
+```
+
+To serve locally (on <http://127.0.0.1:4000/>):
 
 ```bash
 bundle exec jekyll serve
