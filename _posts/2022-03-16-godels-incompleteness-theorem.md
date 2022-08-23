@@ -141,7 +141,7 @@ Now, let's say that your favorite conjecture is proven to be independent of $\te
 
 However, there's a reason why non-euclidean geometries are significantly less studied: most people believe PP is "intuitively true", and study euclidean geometry instead of non-euclidean geometry. This is true of PP, but it's not true of all independent sentences. Sometimes an independent sentence really does fracture a theory into multiple, equally popular camps. In other words, it's not always obvious which "choice" to make (eg whether to add PP or $\lnot$PP).
 
-For instance, in set theory, the [Continuum Hypothesis](https://en.wikipedia.org/wiki/Continuum_hypothesis), which I'll denote CH, is the most well known example of a theorem independent of $\text{ZFC}$. When it was proven to be independent, it split the world of set theory in two, just like PP did. But this time it's worse, because there is a large amount of disagreement among set theorists about whether CH is true. If you tried to get $\text{ZFC} \cup \\{\text{CH}\\}$ accepted as the foundation of mathematics (instead of $\text{ZFC} \cup \\{\lnot \text{CH}\\}$ or just $\text{ZFC}$), you would get significant pushback from set theorists, beacuse to them, both worlds are equally interesting.
+For instance, in set theory, the [Continuum Hypothesis](https://en.wikipedia.org/wiki/Continuum_hypothesis), which I'll denote CH, is the most well known example of a theorem independent of $\text{ZFC}$. When it was proven to be independent, it split the world of set theory in two, just like PP did. But this time it's worse, because there is a large amount of disagreement among set theorists about whether CH is intuitively true. If you tried to get $\text{ZFC} \cup \\{\text{CH}\\}$ accepted as the foundation of mathematics (instead of $\text{ZFC} \cup \\{\lnot \text{CH}\\}$ or just $\text{ZFC}$), you would get significant pushback from set theorists, beacuse to them, both worlds are equally interesting.
 
 You might also hold out hope that alright, fine, $\text{ZFC}$ has some independent sentences, but maybe they're sentences we didn't really care about anyway. This is actually mostly true if you're not a set theorist and don't work with graduate level math! Most sentences independent of $\text{ZFC}$ come from set theory, and the rest are very complicated statements in other fields, most of which I don't even understand the statement of.[^5] But the incompleteness theorem puts a "cap", so to speak, on $\text{ZFC}$ (and thus mathematics): the deeper into a subject you go, the closer and closer you brush up against independent statements. And if you're particularly unlucky, you'll actually run into a theorem in your work which is independent of $\text{ZFC}$, and you'll curse the incompleteness theorem when you do.
 
@@ -215,7 +215,7 @@ So our updated incompleteness theorem is then:
 
 You can see why I didn't want to lead with this definition :)
 
-I promise that I'm not holding anything back anymore — this is the genuine, full incompleteness theorem which gödel himself proved. These two extra assumptions rarely come up in sane discussions of the incompleteness theorem, which is why I left them until now to discuss.
+I promise that I'm not holding anything back anymore — this is the genuine, full incompleteness theorem which gödel himself proved. These two extra assumptions rarely come up in casual discussions of the incompleteness theorem, which is why I left them until now to discuss.
 
 # Afterword
 
