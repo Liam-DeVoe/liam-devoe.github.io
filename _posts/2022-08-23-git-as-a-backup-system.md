@@ -38,7 +38,7 @@ My workflow for backing up looks something like this:
 * copy over the new directory into the backup directory
 * run `git add . && git commit -a -m "backup mm/dd/yyy"`, replacing with current date
 
-You have to delete the previous backup before replacing it or else files which were deleted won't be removed and git won't think they got deleted.
+You have to delete the previous backup before replacing it. Otherwise, files which were deleted won't be removed, and git won't think they got deleted.
 
 I wrote [a script](https://github.com/tybug/dotfiles/blob/87e966b263b62c88b9986d92800b6ff1e2303473/bin/backup) which automates steps 3+, so I just have to copy the files I want to back up to `/Volumes/Backup/temporary` and run `cd /Volumes/Backup/computer\ backups/tybug && backup /Volumes/Backup/temporary`, where `Backup` is the name of my external harddrive.
 
