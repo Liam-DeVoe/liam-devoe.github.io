@@ -13,7 +13,7 @@ There's some obvious reasons why you shouldn't do this:
 * git can't commit empty folders
 * git wasn't designed to be a backup system (less of a strict negative and more of an icky feeling)
 * git has trouble dealing with nested repositories
-* git no builtin backup commands (like "restore this file as of 1 week and 2 days ago")
+* git has no builtin backup commands (like "restore this file as of 1 week and 2 days ago")
 
 That said, there are some pros:
 
