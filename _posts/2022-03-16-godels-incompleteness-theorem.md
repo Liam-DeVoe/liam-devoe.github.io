@@ -90,7 +90,7 @@ Let's take a closer look at the incompleteness theorem, as I've stated it:
 
 We just proved that if there is a sentence $\sigma$ which is independent of $T$, that's equivalent to saying that $T$ is incomplete. So the incompleteness theorem becomes:
 
-<div class="quote"> Any sufficiently strong axiomatic theory $T$ is incomplete.</div>
+<div class="quote">Any sufficiently strong axiomatic theory $T$ is incomplete.</div>
 
 This is where the "incompleteness" portion of the incompleteness theorem's name comes from. Although these two formulations are equivalent, I'll continue to use the first, longer version, since I feel it's more intuitive (as it doesn't require you to unpack the definition of $T$ being incomplete).
 
