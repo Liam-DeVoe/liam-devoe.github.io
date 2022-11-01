@@ -21,7 +21,7 @@ class C(A, B):
 C().f()
 ```
 
-Will this code crash when run? Obviously `A` doesn't inherit from anything, so that `super().f()` call is suspect. But at runtime a "super" of sorts does exist in `C` - namely, `B`. Place your bets now..
+Will this code crash when run? Obviously `A` doesn't inherit from anything, so that `super().f()` call is suspect. But at runtime a "super" of sorts does exist in `C` - namely, `B`. Place your bets now...
 
 The answer, to my surprise, is that this code runs fine. My intuition of `super()` was a sort of static implementation, where if a class doesn't inherit from anything then any `super` call will fail (well, get forwaded to `object`, which obviously doesn't implement `f`).
 
