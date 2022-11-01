@@ -48,7 +48,7 @@ I could automate this further, but I don't see the point since I have to manuall
 
 Sort of.
 
-The good news is, it totally works. I want to see how my harddrive looked last year? `git checkout 4458befdb9`, where 4458befdb9 was my backup on `06/01/2021`. I want to see what changed since the last backup in a particular directory? `git diff HEAD^ -- Desktop/Liam/Music/Various\ Artists/AD：TRANCE\ 2`.
+The good news is, it totally works. I want to see how my harddrive looked last year? `git checkout 4458befdb9`, where `4458befdb9` was my backup on `06/01/2021`. I want to see what changed since the last backup in a particular directory? `git diff HEAD^ -- Desktop/Liam/Music/Various\ Artists/AD：TRANCE\ 2`.
 
 It's slightly harder to restore a single directory to a previous backup. You have to do something like this:
 
