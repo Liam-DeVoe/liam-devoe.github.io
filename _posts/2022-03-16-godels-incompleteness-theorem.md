@@ -1,6 +1,7 @@
 ---
 title: "gödel's incompleteness theorem"
 layout: post
+tags: math
 ---
 
 Ah, Gödel's incompleteness theorem. I wouldn't say it's the most misused theorem in all of mathematics, but I'd argue it has the worst ratio of "people who actually understand it" to "people who misapply it" of any theorem.

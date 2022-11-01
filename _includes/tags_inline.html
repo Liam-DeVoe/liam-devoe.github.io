@@ -1,0 +1,3 @@
+{% for tag in include.tags | sort %}
+  <a href="/tags/{{ tag }}" class="tag__button"></i>{{ tag }}</a>
+{% endfor %}

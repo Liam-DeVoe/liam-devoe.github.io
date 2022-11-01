@@ -104,22 +104,17 @@ h6 {
   text-decoration: none;
   margin: 5px;
 }
-.content-list__entry,
-.content__title {
+.content__container {
   margin-top: 15px;
 }
 .content__title {
-  display: inline-block;
-  margin-bottom: 15px;
+  font-size: 1.6rem;
 }
 .content img {
   width: 100%;
   margin: 15px;
 }
-.title {
-  font-size: 1.6rem;
-}
-.date {
+.content__info {
   color: gray;
 }
 .highlight > pre {
@@ -135,16 +130,18 @@ h6 {
 }
 
 .tag__button {
-  padding: .1rem .3rem;
+  padding: .075rem .25rem;
   font-size: 0.9rem;
   border-radius: .25rem;
-  background-color: #17a2b8;
-  color: white;
+  // colors tentatively taken (and modified) from inline code blocks (`foo`)
+  background-color: #f8f8f8;
+  color: #d786ac;
+  text-align: center;
 
   &:hover {
-    color: white;
     text-decoration: none;
-    background-color: #138496;
+    background-color: #e7e7e7;
+    color: #db8cb0;
   }
 }
 

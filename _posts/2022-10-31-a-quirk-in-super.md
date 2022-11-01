@@ -1,6 +1,7 @@
 ---
 title: "a quirk in super()"
 layout: post
+tags: python
 ---
 
 Quiz time! Consider the following piece of code:

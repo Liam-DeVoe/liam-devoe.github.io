@@ -1,6 +1,6 @@
-<div class="content-list__entry">
-    <a href="{{ include.post.url }}">
-      <div class="title">{{ include.post.title }}</div>
-    </a>
-    <div class="date">{{ include.post.date | date: "%Y-%m-%d" }}</div>
+<div class="content__container">
+  <a href="{{ include.post.url }}">
+    <div class="content__title">{{ include.post.title }}</div>
+  </a>
+  <div class="content__info">{{ include.post.date | date: "%Y-%m-%d" }}{% if include.post.tags.size > 0 %} • {% include tags_inline.html tags=post.tags %}{% endif %}</div>
 </div>

@@ -1,6 +1,7 @@
 ---
 title: tracking all subclasses of a class
 layout: post
+tags: python
 ---
 
 Let's say you have a class `A` and you want to create a list of all subclasses of `A`. I've reached for this exact structure on 3 separate occasions now, and so just recently sat down and abstracted it out to a reusable metaclass. What follows is a journey through creating a solid abstraction around this concept.

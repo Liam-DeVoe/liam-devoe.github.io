@@ -1,6 +1,7 @@
 ---
 title: expensive imports in GUIs
 layout: post
+tags: python
 ---
 
 I maintain an application called [Circleguard](https://github.com/circleguard/circleguard), written in python + pyqt. The challenges of distributing a python gui application are numerous and I wouldn't do it again given the choice. But an interesting problem did come up as a result, which is, as the title of this blog post suggests, how to import expensive modules without impacting the user's experience.
