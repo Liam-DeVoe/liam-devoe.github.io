@@ -88,17 +88,21 @@ h6 {
   max-width: 1000px;
   width: 85%;
 }
-.subtlelink {
-  color: #000;
-}
-.header {
+
+.header__container {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+
 .header__title {
   margin-bottom: 15px;
   font-size: 2rem;
+  color: #000000;
+
+  &:hover {
+    color: #000000;
+  }
 }
 .header__links > a {
   text-decoration: none;
@@ -109,10 +113,6 @@ h6 {
 }
 .content__title {
   font-size: 1.6rem;
-}
-.content img {
-  width: 100%;
-  margin: 15px;
 }
 .content__info {
   color: gray;
