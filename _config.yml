@@ -4,3 +4,7 @@ timezone: America/New_York
 
 plugins:
   - jekyll-feed
+
+# disable smart quotes, first two params are for ' and last two are for "
+kramdown:
+  smart_quotes: ["apos", "apos", "quot", "quot"]
