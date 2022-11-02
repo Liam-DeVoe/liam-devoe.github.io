@@ -129,7 +129,7 @@ h6 {
   font-weight: bolder;
 }
 
-.tag__button {
+.tag {
   padding: .075rem .25rem;
   font-size: 0.9rem;
   border-radius: .25rem;
@@ -143,10 +143,6 @@ h6 {
     background-color: #e7e7e7;
     color: #db8cb0;
   }
-}
-
-.tag__icon {
-  margin-right: 0.2rem;
 }
 
 // make footnotes slightly larger than normal
