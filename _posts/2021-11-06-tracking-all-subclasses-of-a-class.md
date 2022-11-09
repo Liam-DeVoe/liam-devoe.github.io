@@ -82,7 +82,7 @@ With a bit of work, this is resolvable for the case of two distinct class hierar
 
 The biggest point of contention here is where to store the lists of subclasses, and by extension how to determine which list to add a subclass to. Ideally we're not creating them manually as we have been in the above examples, so we need somewhere we can store it programmatically. A perfect place for this is as a class attribute of the base class we're annotating with `TrackSubclassesMeta`. This attribute also doubles as a way to tell the metaclass that this class in particular is at the base of a hierarchy, and any subclasses should be added to its attribute.
 
-Finally, the code:
+Here's the code for that
 
 ```python
 class TrackSubclassesMeta(type):
