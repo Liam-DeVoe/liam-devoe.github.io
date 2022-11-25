@@ -42,7 +42,7 @@ $$\forall a \ (a + a = a)$$
 
 because $+$ isn't in $L_{group}$. Note that whether a statement is a sentence or not depends on the language, which is why we say $L_{group}$-sentence instead of just sentence. When the language is clear from context, we'll drop the $L$- prefix and just say that something is a sentence.
 
-Now, we can bundle all of these axioms together into a single object called a **theory**. $T_{group} = \\{\sigma_0, \sigma_1, \sigma_2\\}$ is the theory of groups. A theory is just defined to be any set of sentences.[^1]
+Now, we can bundle all of these axioms together into a single object called a **theory**. $T_{group} = \\{\sigma_0, \sigma_1, \sigma_2\\}$ is the theory of groups. A theory is defined to be any set of sentences.[^1]
 
 Here's the incompleteness theorem again, for your convenience:
 
