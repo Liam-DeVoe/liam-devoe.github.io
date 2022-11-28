@@ -180,15 +180,13 @@ What people really mean when they say that an independent sentence $\sigma$ is t
 
 But still, for theories which have a standard model, this line of thinking does have some merit. I just wish people would say "there is a sentence which cannot be proven from $T$ but is true in the standard model", instead of saying "there is a true sentence which cannot be proven", which sounds like a contradiction. This seeming contradiction bothered me for many years when I was reading about the incompleteness theorem but didn't yet fully understand it, and I was greatly relieved when I learned enough to understand what was going on here.
 
-## Completeness of First Order Logic
+## Gödel's completeness theorem
 
-(If you've never heard of the completeness of first order logic, you can safely skip this section, if you wish).
+Before his incompleteness theorem, Gödel proved another theorem about the completeness of first order logic. Informally, this theorem says that for all theories $T$ and sentences $\sigma$, if $\sigma$ is true in every model $\mathcal{A} \vDash T$, then there is a proof of $\sigma$ from the axioms of $T$. In other words, there is a proof of every true statement.
 
-This misunuderstanding isn't directly related, but still highly confusing and seemingly directly contradictory to the incompleteness theorem. The problem lies not with the statements of the respective theorems, but rather their naming. In short, the completeness of first order logic means something entirely different than completeness in the incompleteness theorem.
+The naming of these theorems suggests a contradiction: how can we have both Gödel's completeness theorem and Gödel's incompleteness theorem?
 
-Informally, completeness of first order logic says for all theories $T$ and sentences $\sigma$, if $\sigma$ is true in every model $\mathcal{A} \vDash T$, then there is a proof of $\sigma$ from the axioms of $T$. The "complete" here refers to the fact that there is a proof of every true statement.
-
-In contrast, the "incompleteness" in the incompleteness theorem means that some theories $T$ have sentences which are neither true nor false in $T$. These independent sentences don't even satisfy the conditions of the completeness theorem (since they're not true in every model), so these two theorems are entirely orthogonal. So despite the seeming contradiction in their names, there's no contradiction in the statements.
+Well, because they refer to two different notions of completeness. "completeness" in the completeness theorem means that "everything which is true is provable". However, "incompleteness" in the incompleteness theorem means that some theories $T$ have sentences which are neither true nor false in $T$. These independent sentences don't even satisfy the conditions of the completeness theorem (since they're not true in every model), so these two theorems are entirely orthogonal.
 
 # Technicalities
 
