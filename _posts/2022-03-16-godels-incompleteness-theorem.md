@@ -174,9 +174,7 @@ The single most common misunderstanding (I'm tempted to say "abuse") of the inco
 
 (They're using "consistent formal system" to be a theory $T$, "statements about the natural numbers" to be a sentence $\sigma$, and "unprovable within the system" to mean "independent of $T$").
 
-There are two things wrong with this statement: first of all, the independent statement $\sigma$ need not be about the natural numbers. In fact, almost no statement independent of $ZFC$ is about the natural numbers.
-
-But more importantly, an independent sentence $\sigma$ is absolutely not "true" in any sense of the word. It is, *by definition*, true in some model $\mathcal{A} \vDash T$ and false in some other model $\mathcal{B} \vDash T$, so calling it "true" is nonsense. It's neither true nor false; it's independent.
+Except this is wrong. An independent sentence $\sigma$ is absolutely not "true". It is, *by definition*, true in some model $\mathcal{A} \vDash T$ and false in some other model $\mathcal{B} \vDash T$, so calling it "true" is nonsense. It's neither true nor false; it's independent.
 
 What people really mean when they say that an independent sentence $\sigma$ is true is that it's true in the "standard model", and therefore, they argue, intuitively true. The standard model is just the model that everyone has in mind for visualizing some theory $T$. For instance, the standard model of euclidean geometry $T_{EG}$ is the plane $\mathbb{R}^2$. But for other theories, it's not clear at all what the standard model is — what's the standard model for $T_{group}$, for instace? You might say $$(\mathbb{Z}, +)$$, but there's no good reason to choose that group over, say $$(\mathbb{Z}_8, +)$$, or even $$GL(2, \mathbb{R})$$. So I would argue that $$T_{group}$$ has no standard model. Here, this argument about "truth" of an independent sentence breaks down, since there is no standard model.
 
