@@ -212,7 +212,7 @@ So our updated incompleteness theorem is then:
 
 You can see why I didn't want to lead with this definition :)
 
-I promise that I'm not holding anything back anymore — this is the genuine, full incompleteness theorem which Gödel himself proved. These two extra assumptions rarely come up in casual discussions of the incompleteness theorem, which is why I left them until now to discuss.
+I promise that I'm not holding anything back anymore — this is the genuine, full incompleteness theorem which Gödel himself proved[^8]. These two extra assumptions rarely come up in casual discussions of the incompleteness theorem, which is why I left them until now to discuss.
 
 # Afterword
 
@@ -235,3 +235,5 @@ There are also some philosophical implications I wanted to include, but I don't 
 [^6]: This is because any theory of mathematics can't prove that there are any models of that theory, or else the theory would be consistent, which contradicts Gödel's second incompleteness theorem. So there are no "specific models" of a theory of mathematics to look at — in fact, there are no models of a theory of mathematics at all.
 
 [^7]: The multitude of names is thanks to computability theory, which proved that several distinct notions of computability (all with their own names) are actually exactly equivalent, and thus people use the names interchangeably.
+
+[^8]: Ok, fine, you got me: Gödel's original proof required something called [$\omega$-consistency](https://en.wikipedia.org/wiki/%CE%A9-consistent_theory), a strengthening of consistency. However, it turns out this condition is not required and can be weakened to consistency alone, proven with [Rosser's trick](https://en.wikipedia.org/wiki/Rosser%27s_trick).
