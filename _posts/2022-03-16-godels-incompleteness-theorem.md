@@ -112,7 +112,7 @@ Because PP is independent of $T_{NG}$, $T_{NG}$ is incomplete by definition. How
 
 You're in the home stretch now, and I've left the simplest (or rather, easiest to explain informally) for last. A theory $T$ is **sufficiently strong** if it contains the natural numbers, addition on the natural numbers, and multiplication on the natural numbers (or contains items isomorphic to them). More formally, $T$ is sufficiently strong if it contains [Robinson arithmetic](https://en.wikipedia.org/wiki/Robinson_arithmetic), called $Q$. If you're familiar with peano arithmetic, robinson arithmetic is just peano arithmetic without induction.
 
-Understanding *why* containing $Q$ is necessary gets to the heart of the proof of the incompleteness theorem and is a much deeper discussion than we can get into in this post (or that I'm qualified to talk about), so I hope you'll forgive me if I don't go into any more detail here.
+Understanding *why* containing $Q$ is necessary gets to the heart of the proof of the incompleteness theorem and is a much deeper discussion than we can get into in this post, so I hope you'll forgive me for not going into any more detail here.
 
 # Bringing It All Together
 
