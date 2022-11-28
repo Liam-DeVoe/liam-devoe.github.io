@@ -232,7 +232,7 @@ There are also some philosophical implications I wanted to include, but I don't 
 
 [^4]: I'm not well versed in category theory (though I find it fascinating), but it can actually be taken as an alternative foundations of mathematics instead of set theory. I don't think that many people actually do so, however.
 
-[^5]: See [List of statements independent of ZFC](https://en.wikipedia.org/wiki/List_of_statements_independent_of_ZFC) if you're curious.
+[^5]: See [List of statements independent of ZFC](https://en.wikipedia.org/wiki/List_of_statements_independent_of_ZFC).
 
 [^6]: This is because any theory of mathematics can't prove that there are any models of that theory, or else the theory would be consistent, which contradicts Gödel's second incompleteness theorem. So there are no "specific models" of a theory of mathematics to look at — in fact, there are no models of a theory of mathematics at all.
 
