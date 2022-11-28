@@ -128,7 +128,7 @@ And finally, the incompleteness theorem itself again:
 
 <div class="quote">For any sufficiently strong theory $T$, there is a sentence $\sigma$ which is independent of $T$.</div>
 
-Congratulations — you now know everything you need to understand the statement of the incompleteness theorem. If that was your goal, you can walk away a happy man. However, I suspect you're also curious about the consequences of the incompleteness theorem, which I'll discuss below.
+Congratulations — you now know everything you need to understand the statement of the incompleteness theorem. If that was your goal, you can walk away a happy individual. However, I suspect you're also curious about the consequences of the incompleteness theorem, which I'll discuss below.
 
 # Consequences of the Incompleteness Theorem
 
