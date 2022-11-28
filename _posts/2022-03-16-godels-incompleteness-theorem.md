@@ -10,7 +10,7 @@ The goal is that by the end of this post you will fully understand the statement
 
 Let's state the incompleteness theorem (relatively) formally first so you can see where we're headed, and then I'll explain each piece of the definition on its own.
 
-<div class="quote">For any sufficiently strong axiomatic theory $T$, there is a sentence $\sigma$ which is independent of $T$.</div>
+<div class="quote">For any sufficiently strong theory $T$, there is a sentence $\sigma$ which is independent of $T$.</div>
 
 As is typical for mathematical definitions, this is a seemingly simple formulation for what is actually a very complicated theorem. Don't worry if you don't know what **sufficiently strong**, **theory**, **sentence**, or **independent** means — that's exactly what I'll explain below.
 
@@ -46,7 +46,7 @@ Now, we can bundle all of these axioms together into a single object called a **
 
 Here's the incompleteness theorem again, for your convenience:
 
-<div class="quote">For any sufficiently strong axiomatic theory $T$, there is a sentence $\sigma$ which is independent of $T$.</div>
+<div class="quote">For any sufficiently strong theory $T$, there is a sentence $\sigma$ which is independent of $T$.</div>
 
 We've defined what a **sentence** and a **theory** is, so there's only two terms left to define: **sufficiently strong**, and **independent**. Let's tackle **independent** first.
 
@@ -86,11 +86,11 @@ If a theory $T$ is "not complete", we call $T$ incomplete.
 
 Let's take a closer look at the incompleteness theorem, as I've stated it:
 
-<div class="quote">For any sufficiently strong axiomatic theory $T$, there is a sentence $\sigma$ which is independent of $T$.</div>
+<div class="quote">For any sufficiently strong theory $T$, there is a sentence $\sigma$ which is independent of $T$.</div>
 
 We just proved that if there is a sentence $\sigma$ which is independent of $T$, that's equivalent to saying that $T$ is incomplete. So the incompleteness theorem becomes:
 
-<div class="quote">Any sufficiently strong axiomatic theory $T$ is incomplete.</div>
+<div class="quote">Any sufficiently strong theory $T$ is incomplete.</div>
 
 This is where the "incompleteness" portion of the incompleteness theorem's name comes from. Although these two formulations are equivalent, I'll continue to use the first, longer version, since I feel it's more intuitive (as it doesn't require you to unpack the definition of $T$ being incomplete).
 
@@ -126,7 +126,7 @@ Let's recap:
 
 And finally, the incompleteness theorem itself again:
 
-<div class="quote">For any sufficiently strong axiomatic theory $T$, there is a sentence $\sigma$ which is independent of $T$.</div>
+<div class="quote">For any sufficiently strong theory $T$, there is a sentence $\sigma$ which is independent of $T$.</div>
 
 Congratulations — you now know everything you need to understand the statement of the incompleteness theorem. If that was your goal, you can walk away a happy man. However, I suspect you're also curious about the consequences of the incompleteness theorem, which I'll discuss below.
 
@@ -202,7 +202,7 @@ First, we require that the theory $T$ be **satisfiable**. A theory $T$ is **sati
 
 Here's our updated incompleteness theorem:
 
-<div class="quote">For any sufficiently strong, satisfiable axiomatic theory $T$, there is a sentence $\sigma$ which is independent of $T$.</div>
+<div class="quote">For any sufficiently strong, satisfiable theory $T$, there is a sentence $\sigma$ which is independent of $T$.</div>
 
 ## Recursively Enumerable
 
@@ -212,7 +212,7 @@ You might also see such theories being called "decidable", as in, you can "decid
 
 So our updated incompleteness theorem is then:
 
-<div class="quote">For any sufficiently strong, satisfiable, recursively enumerable axiomatic theory $T$, there is a sentence $\sigma$ which is independent of $T$.</div>
+<div class="quote">For any sufficiently strong, satisfiable, recursively enumerable theory $T$, there is a sentence $\sigma$ which is independent of $T$.</div>
 
 You can see why I didn't want to lead with this definition :)
 
