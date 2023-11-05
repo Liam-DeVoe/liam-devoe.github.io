@@ -1,11 +1,10 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400');
-@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+$font-size-base: 1.1rem !default;
 
-@import "variables";
-
+@import "bootstrap/functions";
+@import "bootstrap/variables";
 @import "bootstrap/mixins";
 @import "bootstrap/reboot";
 @import "bootstrap/type";
@@ -29,7 +28,7 @@ body {
   margin: 15px;
   overflow-y: scroll;
   justify-content: center;
-  font-family: "Open Sans (WOFF2)", "Open Sans (WOFF)", "Open Sans (TTF)", sans-serif;
+  font-family: "Open Sans (WOFF2)", sans-serif;
 }
 
 p {
