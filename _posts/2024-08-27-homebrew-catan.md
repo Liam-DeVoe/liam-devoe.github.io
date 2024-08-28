@@ -19,7 +19,7 @@ That said, we did find we needed to tweak the rules. Here's our full homebrew ru
 - If any actions conflict, ties are broken by turn order, with the person who's turn it is having priority, and so on continuing clockwise.
 - You may declare any progress card you own as tradeable by placing it face up in front of you.
   - You can barter with other players using tradeable progress cards as you would any other resource.
-  - They are still progress cards in every respect. They count toward your progress card limit, they can still be stolen by the spy, and you can still play them.
+  - They are still progress cards in every respect. They count toward your progress card limit, they can be stolen by the spy, and you can still play them.
 
 All other rules that interact with turns are still in play: you cannot play a progress card on the same turn you recieve it, the player who rolls a 7 moves the robber, etc. The purpose of the rebuttal period is to deter players from waiting until the last second to reach 13 victory points. And the purpose of not immediately ending the game when a player "wins" is to avoid a mad rush to reach 13 victory points before anyone else on a turn! Requiring progress cards to be played on your turn is both to nerf them, as we found they were otherwise too powerful, and to reduce the potential for conflicting actions.
 
