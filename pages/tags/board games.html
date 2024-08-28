@@ -1,0 +1,13 @@
+---
+meta_title: tybug's blog • board games
+permalink: /tags/board games
+layout: default
+---
+
+<div class="content-list">
+  {% for post in site.posts %}
+    {% if post.tags contains "board games" %}
+      {% include post_inline.html post=post %}
+    {% endif %}
+  {% endfor %}
+</div>
