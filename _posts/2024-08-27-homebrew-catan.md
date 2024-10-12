@@ -5,7 +5,7 @@ tags:
   - "board games"
 ---
 
-My family's board game of choice is Catan. We've probably played close to 50 games of it in my lifetime. Many years ago we started experimenting with some very small homebrew rules, and more recently I saw [real-time Catan](https://robert.ocallahan.org/2024/06/real-time-settlers.html), which we played two games of. Even after two games it was clear to us that real-time Catan is an enormous improvement, and I doubt we'll ever go back to regular Catan again.
+My family's board game of choice is Catan. We've probably played close to 50 games of it in my lifetime. We've experimented with some small homebrew rules before, and more recently I saw [real-time Catan](https://robert.ocallahan.org/2024/06/real-time-settlers.html), which we played two games of. Even after two games it was clear to us that real-time Catan is an enormous improvement, and I doubt we'll ever go back to regular Catan again.
 
 That said, we did find we needed to tweak the rules. Here's our full homebrew ruleset, building off cities and knights + seafarers:
 
