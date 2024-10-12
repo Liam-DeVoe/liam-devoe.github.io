@@ -50,4 +50,4 @@ print(C.__mro__)
 c.f()
 ```
 
-This means you can have a method in a class which always fails but runs fine when you subclass it in a very particular way. I can't think of a black magic use case for this, but maybe someone else can!
+This means you can have a method in a class which always fails except when subclasssed in a very particular way. I can't think of a black magic use case for this, but maybe someone else can!
