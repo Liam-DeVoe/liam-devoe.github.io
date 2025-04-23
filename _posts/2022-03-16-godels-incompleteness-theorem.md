@@ -170,7 +170,7 @@ Except this is wrong. An independent sentence $\sigma$ is absolutely not "true".
 
 What people really mean when they say that an independent sentence $\sigma$ is true is that it's true in the "standard model", and therefore, they argue, intuitively true. What is the standard model? Nothing more than a particular model $\mathcal{A} \vDash T$ we have arbitrarily chosen as intuitive for visualizing $T$. For instance, the standard model of euclidean geometry $T_{EG}$ is the plane $\mathbb{R}^2$.
 
-But for other theories, it's not clear at all what the standard model is – ay, for $T_{group}$. You might suggest $$(\mathbb{Z}, +)$$, but there's no good reason to choose that group over, say $$(\mathbb{Z}_8, +)$$, or even $$GL(2, \mathbb{R})$$. Here, the concept of a "standard model" breaks down.
+But for other theories, it's not clear at all what the standard model is – say, for $T_{group}$. You might suggest $$(\mathbb{Z}, +)$$, but there's no good reason to choose that group over, say $$(\mathbb{Z}_8, +)$$, or even $$GL(2, \mathbb{R})$$. Here, the concept of a "standard model" breaks down.
 
 For theories which have a standard model, this line of thinking does have some philosophical merit. I just wish people would say "there is a sentence which cannot be proven from $T$ but is true in the standard model", instead of saying "there is a true sentence which cannot be proven", which sounds like a contradiction. This seeming contradiction bothered me for many years when reading about the incompleteness theorem, and I was greatly relieved to eventually learn that people were simply misinterpreting the theorem.
 
