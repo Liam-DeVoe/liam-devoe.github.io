@@ -1,4 +1,4 @@
-# [tybug.github.io](https://tybug.github.io/)
+# [tybug.dev](https://tybug.dev/)
 
 My personal blog / website. Don't expect a lot of posts; I only write about things I find interesting. Usually either python or mathematics related.
 
