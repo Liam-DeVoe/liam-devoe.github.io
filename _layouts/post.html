@@ -2,29 +2,29 @@
 layout: default
 ---
 
-<span class="post__title mr-2">{{ page.title }}</span>
+<span class="post__title" style="margin-right: 0.5rem;">{{ page.title }}</span>
 
-<div class="content__info mb-1">{{ page.date |  date: "%A, %B %d, %Y" }}</div>
+<div class="content__info" style="margin-bottom: 0.25rem;">{{ page.date |  date: "%A, %B %d, %Y" }}</div>
 
 <!-- include.post.tags gets automatically coerced to a list somehow, honestly not sure how/why jekyll does that..-->
 {% if page.tags.size > 0 %}
   {% include tags_inline.html tags=page.tags %}
 {% endif %}
 
-<div class="mb-4"></div>
+<div style="margin-bottom: 1.5rem;"></div>
 
 {{ content }}
 
 <hr/>
 
-<div class="d-flex flex-row">
+<div style="display: flex; flex-direction: row;">
   {% if page.previous.url %}
-  	<a href="{{ page.previous.url }}" class="h6 text-dark"><i class="fas fa-long-arrow-alt-left"></i> {{ page.previous.title | markdownify | remove: '<p>' | remove: '</p>' }}</a>
+  	<a href="{{ page.previous.url }}" style="font-size: 1rem; font-weight: 500; line-height: 1.2; color: #212529;"><i class="fas fa-long-arrow-alt-left"></i> {{ page.previous.title | markdownify | remove: '<p>' | remove: '</p>' }}</a>
   {% endif %}
 
-	<div class="flex-grow-1"></div>
+	<div style="flex-grow: 1;"></div>
 
   {% if page.next.url %}
-  	<a href="{{ page.next.url }}" class="h6 text-dark">{{ page.next.title | markdownify | remove: '<p>' | remove: '</p>' }} <i class="fas fa-long-arrow-alt-right"></i></div>
+  	<a href="{{ page.next.url }}" style="font-size: 1rem; font-weight: 500; line-height: 1.2; color: #212529;">{{ page.next.title | markdownify | remove: '<p>' | remove: '</p>' }} <i class="fas fa-long-arrow-alt-right"></i></div>
   {% endif %}
 </div>

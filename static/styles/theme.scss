@@ -1,27 +1,27 @@
 ---
 ---
 
-$font-size-base: 1.1rem !default;
-
-@import "bootstrap/functions";
-@import "bootstrap/variables";
-@import "bootstrap/mixins";
-@import "bootstrap/reboot";
-@import "bootstrap/type";
-@import "bootstrap/grid";
-@import "bootstrap/list-group";
-@import "bootstrap/code";
-@import "bootstrap/nav";
-@import "bootstrap/navbar";
-@import "bootstrap/utilities";
-@import "bootstrap/dropdown";
-@import "bootstrap/card";
-@import "bootstrap/buttons";
-@import "bootstrap/images";
-@import "bootstrap/transitions";
-
 @import "rouge";
 
+// start css reset
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+// end css reset
 
 body {
   display: flex;
@@ -29,6 +29,8 @@ body {
   overflow-y: scroll;
   justify-content: center;
   font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
 
 p {
