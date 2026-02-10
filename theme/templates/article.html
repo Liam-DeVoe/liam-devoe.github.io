@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}{{ article.title }} - Liam's blog{% endblock %}
+
+{% block content %}
+<span class="post__title" style="margin-right: 0.5rem;">{{ article.title }}</span>
+
+<div class="content__info" style="margin-bottom: 0.25rem;">{{ article.date.strftime('%A, %B %d, %Y') }}</div>
+
+{% if article.tags %}
+  {% for tag in article.tags|sort(attribute='name') %}
+    <a href="{{ SITEURL }}/tags/{{ tag.slug }}" class="tag">{{ tag.name }}</a>
+  {% endfor %}
+{% endif %}
+
+<div style="margin-bottom: 1.5rem;"></div>
+
+{{ article.content }}
+
+<hr/>
+
+<div style="display: flex; flex-direction: row;">
+  {% if article.prev_article %}
+    <a href="{{ SITEURL }}/{{ article.prev_article.url }}" style="font-size: 1rem; font-weight: 500; line-height: 1.2; color: #212529;">
+      <i class="fas fa-long-arrow-alt-left"></i> {{ article.prev_article.title }}
+    </a>
+  {% endif %}
+
+  <div style="flex-grow: 1;"></div>
+
+  {% if article.next_article %}
+    <a href="{{ SITEURL }}/{{ article.next_article.url }}" style="font-size: 1rem; font-weight: 500; line-height: 1.2; color: #212529;">
+      {{ article.next_article.title }} <i class="fas fa-long-arrow-alt-right"></i>
+    </a>
+  {% endif %}
+</div>
+{% endblock %}

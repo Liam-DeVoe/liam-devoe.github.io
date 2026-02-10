@@ -1,0 +1,4 @@
+pelican[markdown]==4.11.*
+pymdown-extensions==10.*
+pelican-webassets
+libsass

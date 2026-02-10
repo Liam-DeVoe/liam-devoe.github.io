@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Liam's blog &bull; {{ tag }}{% endblock %}
+
+{% block content %}
+<div class="content-list">
+  {% for article in articles %}
+    <div class="content__container">
+      <a href="{{ SITEURL }}/{{ article.url }}">
+        <div class="content__title">{{ article.title }}</div>
+      </a>
+      <div class="content__info">
+        {{ article.date.strftime('%Y-%m-%d') }}
+        {% if article.tags %} &bull;
+          {% for t in article.tags|sort(attribute='name') %}
+            <a href="{{ SITEURL }}/tags/{{ t.slug }}" class="tag">{{ t.name }}</a>
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}

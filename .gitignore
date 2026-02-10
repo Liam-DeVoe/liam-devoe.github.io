@@ -1,5 +1,6 @@
-.jekyll-cache
+/output/
 _site/
+__pycache__/
+*.pyc
 .DS_Store
-.sass-cache/
-_drafts/
+.webassets-cache/
