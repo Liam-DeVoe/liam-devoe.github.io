@@ -23,7 +23,7 @@ jobs:
         with:
           python-version: "3.14"
       - run: pip install -r requirements.txt
-      - run: pelican content -s publishconf.py
+      - run: pelican content -s publishconf.py --fatal=errors
       - uses: actions/upload-pages-artifact@v3
         with:
           path: output

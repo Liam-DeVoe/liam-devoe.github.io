@@ -57,7 +57,7 @@ MARKDOWN = {
 }
 
 PLUGIN_PATHS = ["plugins"]
-PLUGINS = ["validate_articles", "hidden_articles", "redirect_generator", "webassets"]
+PLUGINS = ["hidden_articles", "redirect_generator", "webassets"]
 
 WEBASSETS_CONFIG = [
     ("libsass_style", "expanded"),
