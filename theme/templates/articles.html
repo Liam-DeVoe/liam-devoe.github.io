@@ -2,10 +2,9 @@
 
 {% set active_nav = 'articles' %}
 
-{% block title %}{{ tag }} | {{ SITENAME }}{% endblock %}
+{% block title %}Articles | {{ SITENAME }}{% endblock %}
 
 {% block content %}
-<h1>{{ tag }}</h1>
 <div class="posts">
   {% for article in articles %}
   <div class="post">

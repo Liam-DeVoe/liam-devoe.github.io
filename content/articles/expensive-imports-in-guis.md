@@ -1,5 +1,5 @@
 ---
-title: expensive imports in GUIs
+title: Expensive imports in GUIs
 date: 2021-07-19
 tags: python
 slug: expensive-imports-in-GUIs

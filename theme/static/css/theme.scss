@@ -1,150 +1,369 @@
 @import "rouge";
 
-// start css reset
-*,
-*::before,
-*::after {
+// Colors
+$color-body: #333;
+$color-secondary: #777;
+$color-accent: #b44c1c;
+$color-thought-text: rgb(70, 70, 70);
+$color-thought-border: rgba($color-accent, 0.6);
+$color-border: #eee;
+
+// Reset
+*, *::before, *::after {
   box-sizing: border-box;
-}
-
-html {
-  font-family: sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  -webkit-text-size-adjust: 100%;
-}
-
-body {
   margin: 0;
   padding: 0;
 }
-// end css reset
 
+// Body
 body {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.72;
+  color: $color-body;
+  background: #fff;
+  padding: 3rem 1.5rem;
   display: flex;
-  margin: 15px;
-  overflow-y: scroll;
   justify-content: center;
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.5;
 }
 
-p {
-  font-weight: 500;
-  color: #000000
+// Container
+.container {
+  max-width: 42em;
+  width: 100%;
+  position: relative;
 }
 
-p > code, li > code {
-  background-color: #f5f5f5;
-  padding: 3px;
-}
+// Links
 a {
+  color: $color-accent;
   text-decoration: none;
-  color: #428bca;
+}
+a:hover {
+  text-decoration: underline;
 }
 
-
+// Typography
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   margin-top: 1.4rem;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1rem;
+}
+h1 { font-size: 1.5rem; font-weight: 600; }
+h2 { font-size: 1.15rem; font-weight: 600; }
+h3 { font-size: 1.1rem; font-weight: 600; }
+h4 { font-size: 1.05rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: 0.95rem; }
+
+p {
+  margin-bottom: 1em;
 }
 
-h1 {
-  font-size: 1.6rem;
-  font-weight: bold;
+ul, ol {
+  padding-left: 1.25em;
+  margin-bottom: 1em;
 }
 
-h2 {
-  font-size: 1.4rem;
-}
-
-h3 {
-  font-size: 1.3rem;
-}
-
-h4 {
-  font-size: 1.2rem;
-}
-
-h5 {
-  font-size: 1.1rem;
-}
-
-h6 {
-  font-size: 1rem;
-}
-
-.quote {
-  width: 80%;
-  margin: auto;
-  margin-bottom: 10px;
-  font-style: italic;
-}
-
-.container {
-  max-width: 850px;
-  width: 85%;
-}
-
-.header__container {
+// Persistent header
+.site-header {
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $color-border;
+}
+.site-header .name {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.site-header .name a {
+  color: inherit;
+}
+.site-header nav {
+  font-size: 0.95rem;
+}
+.site-header nav a {
+  margin-left: 1.25em;
+  color: $color-secondary;
+}
+.site-header nav a:hover {
+  color: $color-accent;
+}
+.site-header nav a.active {
+  color: $color-body;
+  font-weight: 600;
 }
 
-.header__title {
-  margin-bottom: 15px;
-  font-size: 2rem;
-  color: #000000;
+// Post lists (article listings with margin dates)
+.posts {
+  list-style: none;
+}
+.post {
+  position: relative;
+  margin-bottom: 0.65em;
+}
+.post .date {
+  font-size: 0.9rem;
+  color: $color-secondary;
+}
+.post .title {
+  font-size: 1.32rem;
+}
 
-  &:hover {
-    color: #000000;
+// Section heads (homepage)
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.75rem;
+
+  h2 {
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $color-secondary;
+    margin: 0;
+  }
+
+  .all {
+    font-size: 0.78rem;
+    color: $color-secondary;
   }
 }
-.header__links > a {
+
+.section-foot {
+  margin-top: 1rem;
+
+  a {
+    font-size: 0.88rem;
+    color: $color-secondary;
+    padding: 0.4em 1em;
+    border: 1px solid $color-accent;
+    border-radius: 6px;
+    transition: border-color 0.15s, color 0.15s;
+
+    &:hover {
+      color: $color-accent;
+      border-color: darken($color-accent, 10%);
+      text-decoration: none;
+    }
+  }
+}
+
+.section-gap {
+  height: 2.5rem;
+}
+
+// Thought entries
+.thought {
+  padding: 0rem 0 0rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+
+  p, li {
+    color: $color-thought-text;
+    padding: 0.3rem 0;
+    font-size: 0.95rem;
+  }
+}
+.thought .thought-meta {
+  font-size: 0.78rem;
+  color: $color-secondary;
+  margin-bottom: 0.3rem;
+}
+.thought .thought-meta a {
+  color: $color-secondary;
+}
+.thought .thought-meta a:hover {
+  color: $color-accent;
+}
+
+.thought__date {
+  color: $color-secondary;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+.thought__bar {
+  position: absolute;
+  left: -1.75rem;
+  top: -1rem;
+  bottom: -1rem;
+  width: 3.5rem;
+  cursor: pointer;
   text-decoration: none;
-  margin: 5px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 1.75rem;
+    top: 1rem;
+    bottom: 1rem;
+    width: 3px;
+    background: $color-thought-border;
+    transform: translateX(-50%);
+    transition: width 0.1s ease;
+  }
+
+  &:hover::before {
+    background: rgba($color-accent, 0.8);
+    width: 4.5px;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
 }
-.content__container {
-  margin-top: 15px;
+
+// Article page
+article h1 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-top: 0;
 }
-.content__title {
-  font-size: 1.6rem;
+article .meta {
+  font-size: 0.82rem;
+  color: $color-secondary;
+  margin-bottom: 2rem;
 }
-.content__info {
-  color: gray;
+article h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 2rem 0 0.75rem;
+}
+
+// Code
+code {
+  font-family: ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.83em;
+}
+p code, li code {
+  background: rgba(0, 0, 0, 0.04);
+  padding: 0.1em 0.3em;
+  border-radius: 2px;
+}
+pre {
+  background: rgba(0, 0, 0, 0.03);
+  padding: 1em 1.25em;
+  margin: 1.5em 0;
+  overflow-x: auto;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  border-radius: 2px;
+}
+pre code {
+  background: none;
+  padding: 0;
 }
 .highlight > pre {
-  padding: 10px;
-  font-family: "Ubuntu Mono", Menlo, monospace;
   max-width: 100%;
-  overflow-x: auto;
 }
 
-.post__title {
-  font-size: 1.8rem;
-  font-weight: bolder;
+// Sidenotes
+.sidenote {
+  font-size: 0.78rem;
+  color: $color-secondary;
+  line-height: 1.45;
+  overflow-wrap: break-word;
+}
+.sidenote sup {
+  color: $color-accent;
+  font-size: 0.85em;
+  margin-right: 0.2em;
+}
+sup a {
+  color: $color-accent;
+  text-decoration: none;
+  font-size: 0.8em;
 }
 
+// Article navigation (prev/next)
+.article-nav {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid $color-border;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+.article-nav .next {
+  text-align: right;
+}
+.article-nav .label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #bbb;
+  display: block;
+  margin-bottom: 0.15rem;
+}
+
+// Tags
 .tag {
-  padding: .075rem .25rem;
-  font-size: 0.9rem;
-  border-radius: .25rem;
-  // colors tentatively taken (and modified) from inline code blocks (`foo`)
-  background-color: #f8f8f8;
-  color: #d786ac;
+  padding: 0.075rem 0.25rem;
+  font-size: 0.82rem;
+  border-radius: 0.25rem;
+  background-color: rgba(0, 0, 0, 0.04);
+  color: $color-secondary;
   text-align: center;
 
   &:hover {
     text-decoration: none;
-    background-color: #e7e7e7;
-    color: #db8cb0;
+    background-color: rgba(0, 0, 0, 0.08);
+    color: $color-accent;
   }
 }
 
-// make footnotes slightly larger than normal
+// Footnotes
 .footnote {
-  font-size: 15px;
+  font-size: 0.85rem;
+  color: $color-secondary;
+}
+
+// Responsive: wide screens — margin dates and sidenotes
+@media (min-width: 62em) {
+  .post {
+    display: grid;
+    grid-template-columns: 10em 1fr;
+    gap: 0 1.5em;
+    align-items: baseline;
+    margin-left: -11.5em;
+  }
+  .post .date {
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .sidenote {
+    float: right;
+    clear: right;
+    margin-right: calc(-14em - 2em);
+    width: 13em;
+    margin-bottom: 1em;
+  }
+}
+
+// Responsive: narrow screens — inline fallbacks
+@media (max-width: 62em) {
+  .post .date {
+    display: block;
+    margin-bottom: 0.1em;
+  }
+
+  .sidenote {
+    display: block;
+    margin: 0.5em 0 0.75em 1em;
+    padding-left: 0.75em;
+    border-left: 2px solid #e8e8e8;
+  }
 }

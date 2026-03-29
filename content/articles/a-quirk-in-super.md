@@ -1,5 +1,5 @@
 ---
-title: a quirk in super()
+title: A quirk in super()
 date: 2022-10-31
 tags: python
 slug: super-quirk

@@ -1,5 +1,5 @@
 ---
-title: gödel's incompleteness theorem
+title: Gödel's incompleteness theorem
 date: 2022-03-16
 tags: math
 slug: incompleteness

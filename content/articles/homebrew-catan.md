@@ -1,5 +1,5 @@
 ---
-title: homebrew catan
+title: Homebrew catan
 date: 2024-08-27
 tags: board games
 slug: homebrew-catan

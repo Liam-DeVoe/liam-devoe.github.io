@@ -1,5 +1,5 @@
 ---
-title: git as a backup system
+title: Git as a backup system
 date: 2022-08-23
 slug: git-as-a-backup-system
 ---

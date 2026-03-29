@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 
-{% block title %}{{ page.title }} - Liam's blog{% endblock %}
+{% block title %}{{ page.title }} | {{ SITENAME }}{% endblock %}
+
+{% set active_nav = page.slug %}
 
 {% block content %}
 {{ page.content }}

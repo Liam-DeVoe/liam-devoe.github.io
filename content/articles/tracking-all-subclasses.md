@@ -1,5 +1,5 @@
 ---
-title: tracking all subclasses of a class
+title: Tracking all subclasses of a class
 date: 2021-11-06
 tags: python
 slug: tracking-all-subclasses-of-a-class

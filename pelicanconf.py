@@ -1,10 +1,10 @@
-SITENAME = "Liam's blog"
+SITENAME = "Liam DeVoe"
 SITEURL = ""
 TIMEZONE = "America/New_York"
 
 # Content paths
 PATH = "content"
-ARTICLE_PATHS = ["articles"]
+ARTICLE_PATHS = ["articles", "thoughts"]
 PAGE_PATHS = ["pages"]
 STATIC_PATHS = ["extra"]
 EXTRA_PATH_METADATA = {
@@ -57,7 +57,7 @@ MARKDOWN = {
 }
 
 PLUGIN_PATHS = ["plugins"]
-PLUGINS = ["hidden_articles", "redirect_generator", "webassets"]
+PLUGINS = ["hidden_articles", "redirect_generator", "sidenotes", "thoughts", "webassets"]
 
 WEBASSETS_CONFIG = [
     ("libsass_style", "expanded"),
@@ -74,6 +74,10 @@ REDIRECTS = {
     "/2023/10/31/galois-connections/": "/galois-connections/",
     "/2024/08/27/homebrew-catan/": "/homebrew-catan/",
 }
+
+DIRECT_TEMPLATES = ["index", "articles"]
+ARTICLES_SAVE_AS = "articles/index.html"
+ARTICLES_URL = "articles"
 
 JINJA_ENVIRONMENT = {
     "trim_blocks": True,
