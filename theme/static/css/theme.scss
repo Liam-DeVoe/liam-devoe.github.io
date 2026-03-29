@@ -280,6 +280,9 @@ pre code {
   color: $color-accent;
   font-size: 0.85em;
   margin-right: 0.2em;
+
+  &::before { content: "["; }
+  &::after  { content: "]"; }
 }
 sup a {
   color: $color-accent;
@@ -328,6 +331,13 @@ sup a {
 .footnote {
   font-size: 0.85rem;
   color: $color-secondary;
+}
+
+.footnote-ref {
+  font-size: 0.85em;
+
+  &::before { content: "["; }
+  &::after  { content: "]"; }
 }
 
 // Responsive: wide screens — margin dates and sidenotes
