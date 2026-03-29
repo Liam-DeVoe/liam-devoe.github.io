@@ -28,14 +28,22 @@ Deployment is via GitHub Actions on push to master.
 
 ## Article Metadata
 
+Always use `---` fences for front matter in Markdown files.
+
 ```
+---
 Title: Post Title
 Date: 2024-01-15
 Tags: python, math
 Slug: post-slug
+---
 ```
 
 Optional: `Hidden: true` (accessible but unlisted), `Status: draft` (not published).
+
+## URL Structure
+
+Articles are served at `/<slug>/` (no date prefix). Tags at `/tags/<slug>/`. Old date-prefixed URLs are handled by redirects in `pelicanconf.py`.
 
 ## Key Conventions
 
