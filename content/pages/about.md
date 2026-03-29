@@ -3,7 +3,7 @@ Title: About
 Slug: about
 ---
 
-Hey there! I spend quite a lot of time working on property-based testing and fuzzing. While I'm an academic at heart, I focus on writing impactful software, which is why I left my PhD program at Northeastern with a Masters for industry.
+Hey there! I spend quite a lot of time working on property-based testing and fuzzing. While I'm an academic at heart, I focus on writing high-quality, impactful software, which is why I left my PhD program at Northeastern with a Masters for industry.
 
 I don't use social media. Feel free to email me at `orionldevoe@gmail.com`. You might also be interested in [my GitHub](https://github.com/Liam-DeVoe).
 
