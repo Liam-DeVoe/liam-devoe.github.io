@@ -1,6 +1,6 @@
 # [tybug.dev](https://tybug.dev/)
 
-My personal blog / website. Don't expect a lot of posts; I only write about things I find interesting. Usually either python or mathematics related.
+My personal blog / website.
 
 ## Development
 
@@ -16,4 +16,4 @@ To serve locally (on <http://127.0.0.1:8000/>):
 pelican --listen
 ```
 
-To deploy, just push. GitHub Actions takes care of the rest.
+Push to deploy. Served via github actions/pages.
