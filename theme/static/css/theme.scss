@@ -94,7 +94,7 @@ ul, ol {
   color: inherit;
 }
 .site-header nav {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
 }
 .site-header nav a {
   margin-left: 1.25em;
@@ -117,7 +117,7 @@ ul, ol {
   margin-bottom: 0.65em;
 }
 .post .date {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: $color-secondary;
 }
 .post .title {
@@ -132,7 +132,7 @@ ul, ol {
   margin-bottom: 0.75rem;
 
   h2 {
-    font-size: 0.78rem;
+    font-size: 0.95rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -242,7 +242,7 @@ article h1 {
   margin-top: 0;
 }
 article .meta {
-  font-size: 0.82rem;
+  font-size: 0.95rem;
   color: $color-secondary;
   margin-bottom: 2rem;
 }
@@ -250,6 +250,30 @@ article h2 {
   font-size: 1.15rem;
   font-weight: 600;
   margin: 2rem 0 0.75rem;
+}
+
+// Headshot (about page)
+.headshot {
+  float: right;
+  width: 14em;
+  height: 14em;
+  object-fit: cover;
+  margin-top: 0em;
+  margin-right: 1.5em;
+  margin-bottom: 1.35em;
+  margin-left: 1.35em;
+  border-radius: 20px;
+}
+
+@media (max-width: 40em) {
+  .headshot {
+    width: 9em;
+    height: 9em;
+    margin-top: 0.3em;
+    margin-right: 0;
+    margin-bottom: 0.75em;
+    margin-left: 1.25em;
+  }
 }
 
 // Code
@@ -307,13 +331,13 @@ sup a {
   border-top: 1px solid $color-border;
   display: flex;
   justify-content: space-between;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
 }
 .article-nav .next {
   text-align: right;
 }
 .article-nav .label {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: #bbb;
@@ -324,7 +348,7 @@ sup a {
 // Tags
 .tag {
   padding: 0.075rem 0.25rem;
-  font-size: 0.82rem;
+  font-size: 0.95rem;
   border-radius: 0.25rem;
   background-color: rgba(0, 0, 0, 0.04);
   color: $color-secondary;

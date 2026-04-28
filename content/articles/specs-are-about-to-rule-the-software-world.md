@@ -2,6 +2,7 @@
 title: Property-based testing is about to rule the (software) world
 date: 2026-02-11
 slug: specs
+tags: coding
 ---
 
 *And what can we do to prepare?*
