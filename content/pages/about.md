@@ -13,7 +13,7 @@ I also maintain [Hypothesis](https://github.com/hypothesisWorks/hypothesis/), Py
 
 Together with [Zac](https://zhd.dev/), I co-founded [HypoFuzz](https://hypofuzz.com/), providing coverage-guided fuzzing of Hypothesis tests, autoscaling compute of those distributed fuzz workers, and [visual fuzzing observability data](https://hypofuzz.com/example-dashboard/).
 
-As for academia: I co-authored [this NeurIPS workshop paper](https://arxiv.org/abs/2510.09907) in October 2025 [with Anthropic](https://red.anthropic.com/2026/property-based-testing/). I released [the Hypothesis Corpus](https://hypothesis.works/articles/hypothesis-corpus/) dataset in April 2026; the largest ever set of software properties and their runtime information. And I was a participant in [both](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) [iterations](https://metr.org/blog/2026-02-24-uplift-update/) of [METR](https://metr.org/)'s widely cited study on AI productivity.
+As for academia: I co-authored [this NeurIPS workshop paper](https://arxiv.org/abs/2510.09907) in October 2025 [with Anthropic](https://red.anthropic.com/2026/property-based-testing/). I released [the Hypothesis Corpus](https://hypothesis.works/articles/hypothesis-corpus/) dataset in April 2026, the largest ever set of software properties and their runtime information. And I was a participant in [both](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/) [iterations](https://metr.org/blog/2026-02-24-uplift-update/) of [METR](https://metr.org/)'s widely cited study on AI productivity.
 
 I don't use social media; but I'd love [to chat](/chat) if you email me at `orionldevoe@gmail.com` instead!
 
