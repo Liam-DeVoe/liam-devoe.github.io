@@ -23,17 +23,17 @@ Here's Plait, my agent management software[^1]:
 
 ![](/images/plait_homepage.png)
 
-The unit of work in a repository is a *worktop*. Each worktop has a git worktree, and has a nullable 1:1 correspondence with a PR. That is, you can think of a worktop as scoped to the same unit of work as a PR, but which may or may not have an associated PR yet.
+The unit of work in a repository is a *worktop*. Each worktop has a git worktree, and has a nullable 1:1 correspondence with a pull request. That is, you can think of a worktop as scoped to the same unit of work as a PR, but which may or may not have an associated PR yet.
 
 A worktop can contain multiple Claude sessions:
 
 ![](/images/plait_worktop.png)
 
-Claude sessions are standard `claude` processes. Claude code persists sessions on disk automatically, which we resume on demand with `claude --resume <session_id>`.
+Claude sessions are standard `claude` processes. Claude code persists sessions on disk automatically, which Plait resumes on demand with `claude --resume <session_id>`.
 
-My most used workflow is opening a new worktop and talking with its session, eventually telling it to PR its changes. Many worktops only need the single session. Others, especially more involved features, benefit from the advanced context management you get with multiple sessions.
+My most used workflow is to open a new worktop and talk with its session, eventually telling it to PR its changes. Many worktops only need this single session. Others, especially more involved features, benefit from the advanced context management you get with multiple sessions.
 
-In the background, every 5 minutes, Plait kicks off a daemon process. This daemon checks for state changes in any worktops with associated pull requests. Is there a merge conflict? Has the CI turned from green to red? Are there new comments or reactions?
+In the background, every 5 minutes, Plait kicks off a daemon process. This daemon checks for state changes in any worktops with associated pull requests. Is there a merge conflict? Has the CI turned from green to red? Are there new PR comments or reactions?
 
 If so, the daemon starts a *tend* session. This is a Claude session with instructions to resolve the merge conflict, fix the CI if caused by our changes, and resolve any comments addressed towards it. Tend sessions are saved for each worktop if I need to inspect them later.[^2]
 
