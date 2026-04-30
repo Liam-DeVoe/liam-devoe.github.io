@@ -60,6 +60,10 @@ p {
   margin-bottom: 1em;
 }
 
+li > p {
+  margin-bottom: 0.1rem;
+}
+
 .quote {
   width: 80%;
   margin: 0 auto 1em;
@@ -274,6 +278,14 @@ article h2 {
     margin-bottom: 0.75em;
     margin-left: 1.25em;
   }
+}
+
+// Images
+article img {
+  display: block;
+  max-width: 92%;
+  height: auto;
+  margin: 1.5em auto;
 }
 
 // Code

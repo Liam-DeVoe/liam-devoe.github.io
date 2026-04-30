@@ -6,7 +6,7 @@ TIMEZONE = "America/New_York"
 PATH = "content"
 ARTICLE_PATHS = ["articles", "thoughts"]
 PAGE_PATHS = ["pages"]
-STATIC_PATHS = ["extra"]
+STATIC_PATHS = ["extra", "images"]
 EXTRA_PATH_METADATA = {
     "extra/CNAME": {"path": "CNAME"},
     "extra/flexible_automatic_tpbt.pdf": {"path": "static/flexible_automatic_tpbt.pdf"},
