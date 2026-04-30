@@ -5,7 +5,7 @@ Slug: about
 
 <img src="/theme/images/headshot.jpg" alt="Headshot of Liam DeVoe" class="headshot">
 
-Hi there! I work on tools to help write more powerful, legible, and ergonomic software specifications, and therefore more correct software writ large.
+Hi there! I work on tools to write more powerful, legible, and ergonomic software specifications, and therefore more correct software writ large.
 
 I work at [Antithesis](https://antithesis.com) by day, where I co-created [Hegel](https://hegel.dev/), a universal property-based testing protocol to bring PBT to all developers.
 
