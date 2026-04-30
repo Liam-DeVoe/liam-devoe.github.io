@@ -7,7 +7,7 @@ Slug: about
 
 Hi there! I work on tools to write more powerful, legible, and ergonomic software specifications, and therefore more correct software writ large.
 
-I work at [Antithesis](https://antithesis.com) by day, where I co-created [Hegel](https://hegel.dev/), a universal property-based testing protocol to bring PBT to all developers.
+I work at [Antithesis](https://antithesis.com), where I co-created [Hegel](https://hegel.dev/), a universal property-based testing protocol to bring PBT to all developers.
 
 I also maintain [Hypothesis](https://github.com/hypothesisWorks/hypothesis/), Python's property-based testing library[^1]. In my time as a maintainer, I've done foundational work on Hypothesis, including [building a new core representation](https://github.com/HypothesisWorks/hypothesis/issues/3921#issuecomment-2823204378) and [making Hypothesis thread-safe](https://hypothesis.works/articles/thread-safe/).
 
