@@ -1,3 +1,7 @@
+import logging
+
+LOG_FILTER = [(logging.WARN, "Empty alt attribute for image %s in %s")]
+
 SITENAME = "Liam DeVoe"
 SITEURL = ""
 TIMEZONE = "America/New_York"
@@ -10,6 +14,7 @@ STATIC_PATHS = ["extra", "images"]
 EXTRA_PATH_METADATA = {
     "extra/CNAME": {"path": "CNAME"},
     "extra/flexible_automatic_tpbt.pdf": {"path": "static/flexible_automatic_tpbt.pdf"},
+    "extra/favicon.png": {"path": "favicon.png"},
 }
 
 # URL structure
