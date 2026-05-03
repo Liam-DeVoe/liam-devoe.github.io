@@ -17,4 +17,4 @@ As for academia: I co-authored [this NeurIPS workshop paper](https://arxiv.org/a
 
 I don't use social media; but I'd love [to chat](/chat) if you email me at `orionldevoe@gmail.com` instead!
 
-[^1]: It also happens to be the most used property-based testing library, ever.
+[^1]: Hypothesis also happens to be the most used property-based testing library, ever.
